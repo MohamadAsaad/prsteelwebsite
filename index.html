@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrab -->
+    <link rel="stylesheet" href="/css/seyle.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Document</title>
+  </head>
+  <body ">
+    
+    <!--  nav -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-medicine fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="/imgs/PrsteelLogo.png"
+            alt="consult logo"
+            height="40"
+            
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0 fs-14 align-items-center">
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link active text-uppercase"
+                aria-current="page"
+                href="/index.html"
+                
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-uppercase" href="#" 
+                >ABOUT US</a
+              >
+            </li>
+            <li class="nav-item dropdown mx-3">
+              <a
+                class="nav-link dropdown-toggle text-uppercase"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              services
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarScrollingDropdown"
+              >
+                <li><a class="dropdown-item" href="/pages/productcards.html">product cards</a></li>
+                <li><a class="dropdown-item" href="#">AdapterTubes</a></li>
+                <li><a class="dropdown-item" href="/pages/Products.html">Carbon Foot</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Connection Adapters</a>
+                </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item mx-3">
+              <a class="nav-link text-uppercase" href="\pages\Products.html" 
+                >Products</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-uppercase" href="\pages\aboutus.html" 
+                >contact us</a>
+            </li>
+          </ul>
+          <!-- language-picker -->
+          <div class="ml-auto language-picker">
+            <div class="btn-group">
+              <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="languagePickerBtn">
+                Language
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" onclick="changeLanguage('English')">English</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeLanguage('Turkey')">Turkey</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeLanguage('عربي')">عربي</a></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <section id="hero_section">
+      <div class="h-100 d-flex align-items-center">
+        <div class="container">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+            <h1 class="text-uppercase mb-4" contenteditable="true">
+              Medicine center<br />on the go!
+            </h1>
+            <p contenteditable="true">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <div>
+              <button
+                type="button"
+                class="text-uppercase btn medicine-btn px-4 text-white mb-3 fs-14 rounded-0"
+                contenteditable="true"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  floting hero -->
+    <section>
+      <div class="container">
+        <div id="hero_below_sctn" class="position-relative">
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-auto justify-content-center text-white"
+          >
+            <div class="col col1-bg px-4 py-5 text-center floting-hero-a">
+                <div class="mb-4 floting-hero-a-img">
+                   <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z"/></svg>
+                </div>
+              
+              <h5 class="text-uppercase mb-4" >
+                Trust
+              </h5>
+              <p >
+                LProducts that have a high level of security and comply with safety standards.
+              </p>
+            </div>
+            <div class="col col2-bg px-4 py-5 text-center floting-hero-b">
+
+              <div class="mb-4 floting-hero-b-img">
+                <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#f3f4f7" d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.4-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z"/></svg>                </div>
+              <h5 class="text-uppercase mb-4" >
+                High quality
+              </h5>
+              <p contenteditable="true">
+                Combination of quality raw materials, strict quality control process and years of experience.
+              </p>
+            </div>
+            <div class="col col3-bg px-4 py-5 text-center floting-hero-c">
+                <div class="mb-4 floting-hero-c-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#e4e7ec" d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>                 </div>
+              <h5 class="text-uppercase mb-4" >
+                Easy Use
+              </h5>
+              <p contenteditable="true">
+                Products that are as light and easy to use as possible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  section -->
+    <section class="pb-md-5 pb-4">
+        <div class="container">
+          <h2 class="text-uppercase text-center mb-4" >
+              Why Us ?
+          </h2>
+          <span class=""></span>
+          <p class="w-75 mx-auto text-center mb-4" >
+              Our vision is to be a global leader in the field of prosthetics and osseointegration, revolutionizing the way individuals with physical impairments and disabilities experience mobility and functionality.
+  
+              We envision a future where every person, regardless of their physical limitations, has access to advanced and customized assistive technologies that empower them to lead fulfilling and independent lives.
+              
+              We strive to push the boundaries of innovation and research in prosthetics and osseointegration, constantly seeking new breakthroughs that enhance the quality of life for our clients.
+          </p>
+          <div
+            class="row row-cols-1 row-cols-md-2 flex-md-row-reverse mx-auto mt-5"
+          >
+            <div class="col p-4 d-flex align-items-center justify-content-center">
+              <div>
+                <img
+                  src="/imgs/shot-sportsman-artificial-leg.jpg"
+                  class="w-100 ezlazyloaded"
+                  alt="hero img"
+                  
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex">
+                <div class="me-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#62a1be" d="M256 398.8c-11.8 5.1-23.4 9.7-34.9 13.5c16.7 33.8 31 35.7 34.9 35.7s18.1-1.9 34.9-35.7c-11.4-3.9-23.1-8.4-34.9-13.5zM446 256c33 45.2 44.3 90.9 23.6 128c-20.2 36.3-62.5 49.3-115.2 43.2c-22 52.1-55.6 84.8-98.4 84.8s-76.4-32.7-98.4-84.8c-52.7 6.1-95-6.8-115.2-43.2C21.7 346.9 33 301.2 66 256c-33-45.2-44.3-90.9-23.6-128c20.2-36.3 62.5-49.3 115.2-43.2C179.6 32.7 213.2 0 256 0s76.4 32.7 98.4 84.8c52.7-6.1 95 6.8 115.2 43.2c20.7 37.1 9.4 82.8-23.6 128zm-65.8 67.4c-1.7 14.2-3.9 28-6.7 41.2c31.8 1.4 38.6-8.7 40.2-11.7c2.3-4.2 7-17.9-11.9-48.1c-6.8 6.3-14 12.5-21.6 18.6zm-6.7-175.9c2.8 13.1 5 26.9 6.7 41.2c7.6 6.1 14.8 12.3 21.6 18.6c18.9-30.2 14.2-44 11.9-48.1c-1.6-2.9-8.4-13-40.2-11.7zM290.9 99.7C274.1 65.9 259.9 64 256 64s-18.1 1.9-34.9 35.7c11.4 3.9 23.1 8.4 34.9 13.5c11.8-5.1 23.4-9.7 34.9-13.5zm-159 88.9c1.7-14.3 3.9-28 6.7-41.2c-31.8-1.4-38.6 8.7-40.2 11.7c-2.3 4.2-7 17.9 11.9 48.1c6.8-6.3 14-12.5 21.6-18.6zM110.2 304.8C91.4 335 96 348.7 98.3 352.9c1.6 2.9 8.4 13 40.2 11.7c-2.8-13.1-5-26.9-6.7-41.2c-7.6-6.1-14.8-12.3-21.6-18.6zM336 256a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zm-80-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>              </div>
+                <div>
+                  <h5 class="text-uppercase mb-3" >
+                      iso certificates
+                  </h5>
+                  <p >
+                      IB-ER’s production facility has the quality management certificates of ISO13485:2016 and ISO9001:2015 and fulfills the requirements of Medical Device Regulation 2017/745.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex mt-4">
+                  <div class="me-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#62a1eb" d="M232 0c-39.8 0-72 32.2-72 72v8H72C32.2 80 0 112.2 0 152V440c0 39.8 32.2 72 72 72h.2 .2 .2 .2 .2H73h.2 .2 .2 .2 .2 .2 .2 .2 .2 .2H75h.2 .2 .2 .2 .2 .2 .2 .2 .2 .2H77h.2 .2 .2 .2 .2 .2 .2 .2 .2 .2H79h.2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2H82h.2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2H85h.2 .2 .2 .2H86h.2 .2 .2 .2H87h.2 .2 .2 .2H88h.2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2H98h.2 .2 .2 .2H99h.2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2 .2v0H456h8v0H568c39.8 0 72-32.2 72-72V152c0-39.8-32.2-72-72-72H480V72c0-39.8-32.2-72-72-72H232zM480 128h88c13.3 0 24 10.7 24 24v40H536c-13.3 0-24 10.7-24 24s10.7 24 24 24h56v48H536c-13.3 0-24 10.7-24 24s10.7 24 24 24h56V440c0 13.3-10.7 24-24 24H480V336 128zM72 128h88V464h-.1-.2-.2-.2H159h-.2-.2-.2H158h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H154h-.2-.2-.2H153h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H150h-.2-.2-.2H149h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H146h-.2-.2-.2H145h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H142h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H139h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H136h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H133h-.2-.2-.2-.2-.2-.2-.2-.2H131h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H128h-.2-.2-.2-.2-.2-.2-.2-.2H126h-.2-.2-.2-.2-.2-.2-.2-.2H124h-.2-.2-.2-.2-.2-.2-.2-.2H122h-.2-.2-.2-.2-.2-.2-.2-.2H120h-.2-.2-.2-.2-.2-.2-.2-.2H118h-.2-.2-.2-.2-.2-.2-.2-.2H116h-.2-.2-.2-.2-.2-.2-.2-.2H114h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H111h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H108h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H105h-.2-.2-.2-.2H104h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H100h-.2-.2-.2-.2H99h-.2-.2-.2-.2H98h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H88h-.2-.2-.2-.2H87h-.2-.2-.2-.2H86h-.2-.2-.2-.2H85h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H82h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H79h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H77h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H75h-.2-.2-.2-.2-.2-.2-.2-.2-.2-.2H73h-.2-.2-.2-.2-.2H72c-13.2 0-24-10.7-24-24V336h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H48V240h56c13.3 0 24-10.7 24-24s-10.7-24-24-24H48V152c0-13.3 10.7-24 24-24zM208 72c0-13.3 10.7-24 24-24H408c13.3 0 24 10.7 24 24V336 464H368V400c0-26.5-21.5-48-48-48s-48 21.5-48 48v64H208V72zm88 24v24H272c-8.8 0-16 7.2-16 16v16c0 8.8 7.2 16 16 16h24v24c0 8.8 7.2 16 16 16h16c8.8 0 16-7.2 16-16V168h24c8.8 0 16-7.2 16-16V136c0-8.8-7.2-16-16-16H344V96c0-8.8-7.2-16-16-16H312c-8.8 0-16 7.2-16 16z"/></svg>
+                    </div>
+                <div>
+                  <h5 class="text-uppercase mb-3" >
+                      database of FDA
+                  </h5>
+                  <p >
+                      All of our products have CE Declaration and our company is registered in database of FDA.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex mt-4">
+                  <div class="me-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#62a1be" d="M128 0c13.3 0 24 10.7 24 24V64H296V24c0-13.3 10.7-24 24-24s24 10.7 24 24V64h40c35.3 0 64 28.7 64 64v16 48V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V192 144 128C0 92.7 28.7 64 64 64h40V24c0-13.3 10.7-24 24-24zM400 192H48V448c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V192zM329 297L217 409c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47 95-95c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>                  </div>
+                <div>
+                  <h5 class="text-uppercase mb-3" >
+                    24 hrs 
+                  </h5>
+                  <p >
+                      All the materials that process through our production line is certificated and individually marked with serial numbers to provide traceability.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span
+            class="ezoic-autoinsert-video ezoic-under_second_paragraph"
+          ></span>
+        </div>
+      </section>
+      <!--  section -->
+    <div class="about-us-section" id="obout-us">
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-md-row-reverse align-items-center g-5 py-5" style="flex-direction: column-reverse">
+            <div class="col-md-6 about-us-text">
+              <h2 class="display-5 fw-bold lh-1 mb-3">ABOUT US  </h2>
+              <h3 class="display-5 fw-bold lh-1 mb-3">
+                General Orthopedics Prosthetics
+              </h3>
+              <p class="lead">
+                GENERAL ORTHOPEDICS company is dedicated to providing high-quality products and services to our clients in Turkey. We specialize in the design, development, and distribution of orthopedic and prosthetic devices to help individuals improve their mobility and quality of life.
+Our team of experienced professionals includes certified orthotists and prosthetists who work closely with patients and healthcare providers to ensure that our products are tailored to meet their specific needs. We offer a wide range of orthopedic and prosthetic solutions, including braces, supports, prosthetic limbs, and custom-made orthotics.
+At our company, we understand the importance of providing exceptional customer service. We work closely with our clients to ensure that they receive the best possible care and attention. Our staff is dedicated to providing personalized care and support to help clients achieve their goals and improve their quality of life.
+We are committed to staying up-to-date with the latest advancements in orthopedic and prosthetic technology. Our team is constantly researching and developing new products and techniques to help our clients achieve better outcomes.
+If you are looking for a reliable and trusted orthopedic and prosthetics company in Turkey, look no further than our company. We are dedicated to providing the highest quality products and services to our clients, and we look forward to serving you.
+          
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <div>
+                    <button
+                      type="button"
+                      class="text-uppercase btn medicine-btn px-4 text-white mb-3 fs-14 rounded-0"
+                      contenteditable="true"
+                    >
+                      Read more
+                    </button>
+                  </div>
+              </div>
+            </div>
+            <div class="col-10 col-xs-12 col-md-6 about-us-img">
+              <img src="/imgs/Patient-Links.jpg" class="d-block mx-lg-auto img-fluid" alt="hero image" width="700" height="500" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--  section -->
+    <section class="col2-bg py-md-5 py-4 text-white">
+      <div class="container my-md-4">
+        <h2 class="text-center text-uppercase mb-4" >
+          Lorem, ipsum.
+        </h2>
+        <p class="w-75 mx-auto text-center mb-4" >
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
+        <div
+          class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 mx-auto justify-content-center mt-5"
+        >
+          <div class="col text-center">
+            <img
+              src="https://htmljstemplates.com/static_files/images/landing-pages/heart-rate.svg"
+              width="70"
+              height="70"
+              alt="brain img"
+              class="mb-3"
+            />
+            <h5 class="text-uppercase mb-3" contenteditable="true">
+              neurology
+            </h5>
+          </div>
+          <div class="col text-center">
+            <img
+              src="https://htmljstemplates.com/static_files/images/landing-pages/heart-rate.svg"
+              width="70"
+              height="70"
+              alt="heart rate"
+              class="mb-3"
+            />
+            <h5 class="text-uppercase mb-3" contenteditable="true">
+              cardiology
+            </h5>
+          </div>
+          <div class="col text-center">
+            <img
+              src="https://htmljstemplates.com/static_files/images/landing-pages/heart-rate.svg"
+              width="70"
+              height="70"
+              alt="kidney rate"
+              class="mb-3"
+            />
+            <h5 class="text-uppercase mb-4" contenteditable="true">urology</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  section -->
+    <section class="py-md-5 py-4">
+      <div class="container my-md-4">
+        <h2 class="text-uppercase text-center mb-3" >
+            Product Range
+        </h2>
+        <p class="w-50 mx-auto text-center mb-4" >
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+        </p>
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-auto justify-content-center mt-5"
+        >
+          <div class="col mb-4">
+            <div class="shadow h-100">
+              <img
+                src="/imgs/collins-tfoe-istock-503665160.txt"
+                width="100%"
+                height="250"
+                alt="stethoscope"
+                
+              />
+              <div class="p-4">
+                <h5 class="text-uppercase mb-3" >
+                    CARBON FOOT AND FOOT SHELL
+                </h5>
+                <p contenteditable="true">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+                <a
+                  href="#"
+                  class="fs-14 text-uppercase text-decoration-none"
+                  
+                  >read more</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="shadow h-100">
+              <img
+                src="/imgs/low-angle-view-disabled-young-600nw-1810865167.webp"
+                width="100%"
+                height="250"
+                alt="stethoscope"
+                
+              />
+              <div class="p-4">
+                <h5 class="text-uppercase mb-3" >
+                    FOOT & MODULAR ADAPTERS
+                </h5>
+                <p >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+                <a
+                  href="#"
+                  class="fs-14 text-uppercase text-decoration-none"
+                  
+                  >read more</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="shadow h-100">
+              <img
+                src="/imgs/860x394.jpg"
+                width="100%"
+                height="250"
+                alt="stethoscope"
+                
+              />
+              <div class="p-4">
+                <h5 class="text-uppercase mb-3" >
+                    KNEE JOINTS
+                </h5>
+                <p >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+                <a
+                  href="#"
+                  class="fs-14 text-uppercase text-decoration-none"
+                  
+                  >read more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  section -->
+    <section class="col1-bg py-md-5 py-4">
+      <div class="container my-4">
+        <h2 class="text-uppercase text-center mb-3" contenteditable="true">get in touch</h2>
+        <p class="w-50 mx-auto text-center mb-4" contenteditable="true">Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text</p>
+        <form class="col-12 col-md-8 col-xl-6 mt-5 mx-auto">
+          <div class="row row-cols-2 gx-3 mb-3">
+            <div class="col">
+              <input class="form-control" id="first-name" name="first-name" placeholder="Enter your First Name">
+            </div>
+            <div class="col">
+              <input class="form-control" id="last-name" name="last-name" placeholder="Enter your Last Name">
+            </div>
+          </div>
+          <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Enter a valid email address">
+          <textarea rows="3" placeholder="Enter your message" class="form-control mb-3"></textarea>
+          <button class="btn btn-submit fs-14 text-uppercase w-100 mt-4 text-white" contenteditable="true">submit</button>
+        </form>
+      </div>
+    </section>
+    <!--  footer -->
+    <footer class="bg-medicine py-5">
+      <div class="container mt-md-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mx-auto">
+          <div class="col mb-3">
+            <a href="#"
+              ><img
+                src="/imgs/logoipsum-297.svg"
+                alt="consult logo"
+                class="mb-3 "
+                height="40"
+                
+            /></a>
+            <p contenteditable="true">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+            </p>
+            <div class="d-flex">
+              <div
+                class="border footer_img rounded-circle d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              </div>
+              <div
+                class="border footer_img rounded-circle d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </div>
+              <div
+                class="border footer_img rounded-circle d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              </div>
+              <div
+                class="border footer_img rounded-circle d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <h4 class="mb-3" ">Support</h4>
+            <ul class="mb-0 list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                 
+                  >Contact us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                  
+                  >FAQ</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                  
+                  >Downloads</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                  
+                  >Become a Partner</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col mb-3">
+            <h4 class="mb-3" >Services</h4>
+            <ul class="mb-0 list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                  
+                  >Child Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                  
+                  >Birth Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                  
+                  >Dental Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                  
+                  >Emergency</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col mb-3">
+            <h4
+              class="mb-3 text-uppercase poppins-semibold"
+              
+            >
+              Contact us
+            </h4>
+            <div class="mb-4 dash-footer rounded-2"></div>
+            <div class="mb-3 d-flex align-items-center">
+              <i
+                class="fa fa-map-marker content-text-color mt-1 me-3"
+                aria-hidden="true"
+              ></i
+              ><span >Prsteel</span>
+            </div>
+            <div class="mb-3 d-flex align-items-center">
+              <i
+                class="fa fa-phone content-text-color mt-1 me-3"
+                aria-hidden="true"
+              ></i
+              ><span >+90 9976634054</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <i
+                class="fa fa-envelope content-text-color me-3"
+                aria-hidden="true"
+              ></i
+              ><a
+                href="mailto:admin@gmail.com"
+                class="text-reset text-decoration-none"
+                
+                ><span>info@prsteel.com.tr </span></a
+
+                
+              >
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-4">
+          <small class="text-muted" 
+            >© All rights reserved  |
+            <a href="/" >Prsteel Ltd</a> | 2024</small
+          >
+        </div>
+      </div>
+    </footer>
+    <div
+      class="position-fixed bottom-0 start-0 w-100 bg-white shadow-lg"
+      id="insertedCode"
+    >
+      
+      <div class="p-2 text-center">
+        Developed and designed by
+        <a
+          href=""
+          target="_blank"
+          >Mohamad Asaad</a
+        >
+        
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script>
+      function changeLanguage(language) {
+        document.getElementById('languagePickerBtn').innerText = language;
+      }
+    </script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+  </body>
+</html>

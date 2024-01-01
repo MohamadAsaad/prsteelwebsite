@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+/*my font*/
+
+@font-face {
+    font-family: "29ltbukrabold";
+    src: url("../fonts/29ltbukrabold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "29ltbukralight";
+    src: url("../fonts/29ltbukralight.otf");
+    font-weight: light;
+}
+
+@font-face {
+    font-family: "29ltbukrabolditalic";
+    src: url("../fonts/29ltbukrabolditalic.otf");
+    font-weight: bolditalic;
+}
+
+/*-------*/
+
+:root {
+    
+    --main-color: #565655;
+    --second-color: #aecb06;
+
+    
+    --third-color: #F0F032;
+    --forth-color: #CCCCCC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+  body{
+    background-color: #c5e0f0;
+    margin: 0;
+    padding: 0;
+    
+   }
+
+   .bg-medicine {
+    background-color: var(--second-color);
+}
+ 
+/*----------hero section---------------------------------------------*/
+#hero_section {
+  height: 700px;
+  width: 100%;
+  background-image: url(/imgs/AdobeStock_217484897-1.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+.medicine-btn {
+  background-color: var(--second-color)!important;
+}
+
+/*----------hero floting---------------------------------------------*/
+#hero_below_sctn{
+  top: -100px;    
+}
+.floting-hero-a {
+  background-color: var(--forth-color) !important;
+}
+.floting-hero-b {
+  background-color: var(--second-color) !important;
+}
+  .floting-hero-c {
+  background-color: var(--main-color) !important;
+}
+
+
+/* ---------------------about us------------------------------------------------ */
+
+.about-us-section {
+  background-color: var(--main-color);
+}
+
+.about-us-text h2 {
+  font-family: "29ltbukrabold", sans-serif;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  line-height: 1.5 !important;
+  margin-bottom: 30px !important;
+}
+.about-us-text h3 {
+  font-family: "29ltbukrabold", sans-serif;
+  font-size: 30px;
+  color: rgb(194, 172, 62);
+  line-height: 1.5 !important;
+}
+.about-us-text p {
+  font-family: "29ltbukralight", sans-serif;
+  font-size: 15px;
+  color: white;
+  line-height: 1.5 !important;
+}
+.about-us-text .btn {
+  margin-top: 50px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(246, 219, 78);
+  border-image: initial;
+}
+
+/* --------------------------------our department section------------------------------------- */
+h1 {
+  font-size: calc(1.8rem + 1.5vw);
+}
+.col2-bg {
+  background-color: var(--forth-color);
+}
+.col1-bg {
+  background-color: #ced7dd;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.btn-submit {
+  background-color: #62a1be!important;
+  padding-top: 12px!important;
+  padding-bottom: 12px!important;
+}
+.footer_img {
+  width: 40px;
+  height: 40px;
+  border-color: #919eab!important;
+}
+
+
+
+
+
+
+/* -----------------products-------------------- */
+.list-group-item:first-child {
+  
+  background-color: #8a9199!important;
+  font-weight: bold;
+}
+.list-group-item.active {
+  
+  background-color: var(--forth-color)!important;
+  
+}
+
+/* -------------products info card hover effect --- ----------------*/
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.1);
+}
+
+.product-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(100%);
+}
+
+.product-card:hover .product-info {
+  transform: translateY(0);
+}
+
+
+
+
+/* ---------------- ----------------*/
+
+/* ----------------our services section ----------------*/

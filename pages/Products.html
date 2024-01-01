@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrab -->
+    <link rel="stylesheet" href="/css/seyle.css" />
+    <link rel="stylesheet" href="/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- nav section -->
+    <nav class="navbar navbar-expand-xl navbar-light bg-medicine fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="/imgs/logoipsum-297.svg"
+            alt="consult logo"
+            height="40"
+            
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0 fs-14 align-items-center">
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link active text-uppercase"
+                aria-current="page"
+                href="/index.html"
+                
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-uppercase" href="#" 
+                >ABOUT US</a
+              >
+            </li>
+            <li class="nav-item dropdown mx-3">
+              <a
+                class="nav-link dropdown-toggle text-uppercase"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              services
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarScrollingDropdown"
+              >
+                <li><a class="dropdown-item" href="/pages/productcards.html">product cards</a></li>
+                <li><a class="dropdown-item" href="#">AdapterTubes</a></li>
+                <li><a class="dropdown-item" href="/pages/Products.html">Carbon Foot</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Connection Adapters</a>
+                </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item mx-3">
+              <a class="nav-link text-uppercase" href="\pages\Products.html" 
+                >Products</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link text-uppercase" href="\pages\aboutus.html" 
+                >contact us</a>
+            </li>
+          </ul>
+          <!-- language-picker -->
+          <div class="ml-auto language-picker">
+            <div class="btn-group">
+              <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="languagePickerBtn">
+                Language
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" onclick="changeLanguage('English')">English</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeLanguage('Turkey')">Turkey</a></li>
+                <li><a class="dropdown-item" href="#" onclick="changeLanguage('عربي')">عربي</a></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </nav>
+
+    <!-- tab section -->
+    <div class="container mt-5 mb-5 mh">
+      <div class="row">
+        <div class="col-lg-3 d-lg-block d-md-none d-sm-none d-none">
+          <div class="list-group" id="myList" role="tablist">
+            <a
+              class="list-group-item list-group-item-action active"
+              aria-current="true"
+              data-bs-toggle="list"
+              
+              role="tab"
+              aria-current="true"
+              >Products</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              href="#AdapterTubes"
+              role="tab"
+              >AdapterTubes</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              href="#CarbonFoot"
+              role="tab"
+              >Carbon Foot</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              href="#ConnectionAdapters"
+              role="tab"
+              >Connection Adapters</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              href="#CosmeticFoams"
+              role="tab"
+              >Cosmetic Foams</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              href="#KneeJoints"
+              role="tab"
+              >Knee Joints</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              href="#Orthotics"
+              role="tab"
+              >Orthotics</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              href="#PinLockSystems"
+              role="tab"
+              >Pin Lock Systems</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              href="#messages"
+              role="tab"
+              >Messages</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              href="#messages"
+              role="tab"
+              >Messages</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              href="#SiliconeLiners"
+              role="tab"
+              >Silicone Liners</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              href="#SiliconeSleeve"
+              role="tab"
+              >Silicone Sleeve</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              href="#SocketAdapters"
+              role="tab"
+              >Socket Adapters</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="list"
+              href="#TubeAdapters"
+              role="tab"
+              >Tube Adapters</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="">
+            <div class="tab-content">
+              <div class="tab-pane active" id="home" role="tabpanel "></div>
+              <div class="tab-pane" id="AdapterTubes" role="tabpanel ">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                  <div class="col">
+                    <div class="card h-100"><a href="/pages/productmodel.html">
+                      <img src="https://picsum.photos/200/200" class="card-img-top" alt="..." /></a>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a longer card
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100"><a href="/pages/productmodel.html">
+                      <img src="https://picsum.photos/200/200" class="card-img-top" alt="..." /></a>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a longer card
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100"><a href="/pages/productmodel.html">
+                      <img src="https://picsum.photos/200/200" class="card-img-top" alt="..." /></a>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a longer card
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100"><a href="/pages/productmodel.html">
+                      <img src="https://picsum.photos/200/200" class="card-img-top" alt="..." /></a>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a longer card
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="CarbonFoot" role="tabpanel">
+                CarbonFoot
+              </div>
+              <div class="tab-pane" id="ConnectionAdapters" role="tabpanel">
+                Connection Adapters
+              </div>
+              <div class="tab-pane" id="CosmeticFoams" role="tabpanel">
+                Cosmetic Foams
+              </div>
+              <div class="tab-pane" id="KneeJoints" role="tabpanel">
+                Knee Joints
+              </div>
+              <div class="tab-pane" id="Orthotics" role="tabpanel">
+                Orthotics
+              </div>
+              <div class="tab-pane" id="PinLockSystems" role="tabpanel">
+                Pin Lock Systems
+              </div>
+              <div class="tab-pane" id="SiliconeLiners" role="tabpanel">
+                Silicone Liners
+              </div>
+              <div class="tab-pane" id="SiliconeSleeve" role="tabpanel">
+                Silicone Sleeve
+              </div>
+              <div class="tab-pane" id="SocketAdapters" role="tabpanel">
+                Socket Adapters
+              </div>
+              <div class="tab-pane" id="TubeAdapters" role="tabpanel">
+                Tube Adapters
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer------------- -->
+    <footer class="bg-medicine py-5">
+      <div class="container mt-md-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mx-auto">
+          <div class="col mb-3">
+            <a href="#"
+              ><img
+                src="/imgs/logoipsum-297.svg"
+                alt="consult logo"
+                class="mb-3 "
+                height="40"
+                
+            /></a>
+            <p contenteditable="true">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+            </p>
+            <div class="d-flex">
+              <div
+                class="border footer_img rounded-circle d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              </div>
+              <div
+                class="border footer_img rounded-circle d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </div>
+              <div
+                class="border footer_img rounded-circle d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              </div>
+              <div
+                class="border footer_img rounded-circle d-flex align-items-center justify-content-center me-2"
+              >
+                <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <h4 class="mb-3" ">Support</h4>
+            <ul class="mb-0 list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                 
+                  >Contact us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                  
+                  >FAQ</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                  
+                  >Downloads</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                  
+                  >Become a Partner</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col mb-3">
+            <h4 class="mb-3" >Services</h4>
+            <ul class="mb-0 list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                  
+                  >Child Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                  
+                  >Birth Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                  
+                  >Dental Care</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="text-decoration-none text-reset"
+                  
+                  >Emergency</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col mb-3">
+            <h4
+              class="mb-3 text-uppercase poppins-semibold"
+              
+            >
+              Contact us
+            </h4>
+            <div class="mb-4 dash-footer rounded-2"></div>
+            <div class="mb-3 d-flex align-items-center">
+              <i
+                class="fa fa-map-marker content-text-color mt-1 me-3"
+                aria-hidden="true"
+              ></i
+              ><span >Prsteel</span>
+            </div>
+            <div class="mb-3 d-flex align-items-center">
+              <i
+                class="fa fa-phone content-text-color mt-1 me-3"
+                aria-hidden="true"
+              ></i
+              ><span >+90 9976634054</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <i
+                class="fa fa-envelope content-text-color me-3"
+                aria-hidden="true"
+              ></i
+              ><a
+                href="mailto:admin@gmail.com"
+                class="text-reset text-decoration-none"
+                
+                ><span>info@prsteel.com.tr </span></a
+
+                
+              >
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-4">
+          <small class="text-muted" 
+            >© All rights reserved  |
+            <a href="/" >Prsteel Ltd</a> | 2024</small
+          >
+        </div>
+      </div>
+    </footer>
+    <div
+      class="position-fixed bottom-0 start-0 w-100 bg-white shadow-lg"
+      id="insertedCode"
+    >
+      
+      <div class="p-2 text-center">
+        Developed and designed by
+        <a
+          href=""
+          target="_blank"
+          >Mohamad Asaad</a
+        >
+        
+      </div>
+    </div>
+
+
+
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/jquery-3.5.1.min.js"></script>
+
+    <!--Navigation bar-->
+
+    <script></script>
+
+    <!--end of Navigation bar-->
+  </body>
+</html>
