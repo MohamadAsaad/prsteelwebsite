@@ -79,6 +79,7 @@ Version:	1.1
 			Hero Slider JS
 		=================================*/ 
 		$(".hero-slider").owlCarousel({
+			rtl:true,
 			loop:true,
 			autoplay:true,
 			smartSpeed: 500,
@@ -95,6 +96,7 @@ Version:	1.1
 			Testimonial Slider JS
 		=================================*/ 
 		$('.testimonial-slider').owlCarousel({
+			rtl:true,
 			items:3,
 			autoplay:true,
 			autoplayTimeout:4500,
@@ -127,6 +129,7 @@ Version:	1.1
 			Portfolio Slider JS
 		=================================*/ 
 		$('.portfolio-slider').owlCarousel({
+			rtl:true,
 			autoplay:true,
 			autoplayTimeout:4000,
 			margin:15,
@@ -180,6 +183,7 @@ Version:	1.1
 			Clients Slider JS
 		=================================*/ 
 		$('.clients-slider').owlCarousel({
+			rtl:true,
 			items:5,
 			autoplay:true,
 			autoplayTimeout:3500,
@@ -209,6 +213,7 @@ Version:	1.1
 			Single Portfolio Slider JS
 		======================================*/ 
 		$('.pf-details-slider').owlCarousel({
+			rtl:true,
 			items:1,
 			autoplay:false,
 			autoplayTimeout:5000,
