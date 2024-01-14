@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Picker</title>
+    <script>
+      function changeLanguage() {
+        var language = document.getElementById("language").value;
+        if (language == "english") {
+          window.location.href = "index.html";
+        } else if (language == "turkish") {
+          window.location.href = "turkish.html";
+        } else if (language == "arabic") {
+          window.location.href = "index_ar.html";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <select id="language" onchange="changeLanguage()">
+        <option value="english">En</option>
+        <option value="turkish">Tr</option>
+        <option value="arabic">العربية</option>
+      </select>
+    </div>
+
+    <!-- Your page content goes here -->
+  </body>
+</html>

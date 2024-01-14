@@ -32,6 +32,23 @@ Version:	1.1
 =========================================
 [End Activation Code]
 =========================================*/ 
+// language picker
+
+ 
+
+// end language picker
+
+
+
+
+
+
+
+
+
+
+
+
 (function($) {
     "use strict";
      $(document).on('ready', function() {
