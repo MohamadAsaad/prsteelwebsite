@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="ar" dir="rtl">
 
 <head>
   <!-- Meta Tags -->
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="keywords" content="Site keywords here" />
   <meta name="description" content="" />
@@ -21,42 +22,46 @@
     href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
     rel="stylesheet" />
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
   <!-- Nice Select CSS -->
-  <link rel="stylesheet" href="css/nice-select.css" />
+  <link rel="stylesheet" href="../css/nice-select.css" />
   <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/font-awesome.min.css" />
   <!-- icofont CSS -->
-  <link rel="stylesheet" href="css/icofont.css" />
+  <link rel="stylesheet" href="../css/icofont.css" />
   <!-- Slicknav -->
-  <link rel="stylesheet" href="css/slicknav.min.css" />
+  <link rel="stylesheet" href="../css/slicknav.min.css" />
   <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="css/owl-carousel.css" />
+  <link rel="stylesheet" href="../css/owl-carousel.css" />
   <!-- Datepicker CSS -->
-  <link rel="stylesheet" href="css/datepicker.css" />
+  <link rel="stylesheet" href="../css/datepicker.css" />
   <!-- Animate CSS -->
-  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="../css/animate.min.css" />
   <!-- Magnific Popup CSS -->
-  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="../css/magnific-popup.css" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <link rel="stylesheet" href="css/products.css" />
+  <!--  CSS -->
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="../css/products.css" />
+  <link rel="stylesheet" href="../ar.css" />
 
+  <!-- language picker -->
   <script>
     function changeLanguage() {
       var language = document.getElementById("language").value;
-      if (language == "english") {
-        window.location.href = "index.html";
+      if (language == "arabic") {
+        window.location.href = "/index_ar.html";
       } else if (language == "turkish") {
         window.location.href = "turkish.html";
-      } else if (language == "arabic") {
-        window.location.href = "index_ar.html";
+      } else if (language == "english") {
+        window.location.href = "/index.html";
       }
     }
   </script>
+  <!-- end language picker -->
+
 </head>
 
 <body>
@@ -79,7 +84,7 @@
   <!-- Header Area -->
   <header class="header">
     <!-- Topbar -->
-    <div class="topbar">
+    <div class="topbar" dir="ltr">
       <div class="container-fluid">
         <div class="row">
 
@@ -101,9 +106,9 @@
           <div class="col-lg-3 col-md-3 col-12">
             <div class="language-picker">
               <select id="language" onchange="changeLanguage()">
-                <option value="english selected">English</option>
+                <option value="english">English</option>
                 <option value="turkish">Türkçe</option>
-                <option value="arabic">العربية</option>
+                <option value="arabic" selected>العربية</option>
               </select>
             </div>
           </div>
@@ -113,14 +118,14 @@
     </div>
     <!-- End Topbar -->
     <!-- Header Inner -->
-    <div class="header-inner">
+    <div class="header-inner" dir="ltr">
       <div class="container">
         <div class="inner">
           <div class="row">
             <div class="col-lg-3 col-md-3 col-12">
               <!-- Start Logo -->
               <div class="logo">
-                <a href="index.html"><img src="img/PrsteelLogo.png" alt="PrsteelLogo" /></a>
+                <a href="../index_ar.html"><img src="../img/PrsteelLogo.png" alt="PrsteelLogo" /></a>
               </div>
               <!-- End Logo -->
               <!-- Mobile Nav -->
@@ -132,10 +137,15 @@
               <div class="main-menu">
                 <nav class="navigation">
                   <ul class="nav menu">
-                    <li class="active"><a href="index.html">HOME </a></li>
-                    <li><a href="about.html">ABOUT US </a></li>
                     <li>
-                      <a href="products.html">PRODUCTS <i class="icofont-rounded-down"></i></a>
+                      <a href="#">الصفحات</a>
+                      <ul class="dropdown">
+                        <li><a href="../404.html">404 Error</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="contact.html">الاتصال</a></li>
+                    <li>
+                      <a href="products.html">المنتجات <i class="icofont-rounded-down"></i></a>
                       <ul class="dropdown">
                         <li><a href="products.html#product1">CARBON FOOT</a></li>
                         <li><a href="products.html">PROSTHETIC FEET</a></li>
@@ -147,13 +157,9 @@
                         <li><a href="products.html">ORTHOTIC COMPONENTS</a></li>
                       </ul>
                     </li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                    <li>
-                      <a href="#">PAGES <i class="icofont-rounded-down"></i></a>
-                      <ul class="dropdown">
-                        <li><a href="404.html">404 Error</a></li>
-                      </ul>
-                    </li>
+                    <li><a href="about.html">من نحن </a></li>
+
+                    <li class="active"><a href="../index_ar.html">الرئيسية </a></li>
                   </ul>
                 </nav>
               </div>
@@ -175,9 +181,9 @@
           <div class="col-12">
             <h2>Products</h2>
             <ul class="bread-list">
-              <li><a href="index.html">Home</a></li>
-              <li><i class="icofont-simple-right"></i></li>
-              <li class="active">products</li>
+              <li><a href="../index_ar.html">الرئيسية</a></li>
+              <li><i class="icofont-simple-left"></i></li>
+              <li class="active">المنتجات</li>
             </ul>
           </div>
         </div>
@@ -236,7 +242,7 @@
               <!-- list products card ---------->
               <div class="col-md-3 mb-4">
                 <div class="card product-card">
-                  <img class="card-img-top product-img" src="imgs/dinamik-ayak.jpg" alt="Product Image" />
+                  <img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg" alt="Product Image" />
                   <div class="product-info">
                     <h4 style="font-weight: bold; color: #000">
                       product code
@@ -270,7 +276,7 @@
               </div>
               <div class="col-md-3 mb-4">
                 <div class="card product-card">
-                  <img class="card-img-top product-img" src="imgs/dinamik-ayak.jpg" alt="Product Image" />
+                  <img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg" alt="Product Image" />
                   <div class="product-info">
                     <h4 style="font-weight: bold; color: #000">
                       product code
@@ -304,7 +310,7 @@
               </div>
               <div class="col-md-3 mb-4">
                 <div class="card product-card">
-                  <img class="card-img-top product-img" src="imgs/dinamik-ayak.jpg" alt="Product Image" />
+                  <img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg" alt="Product Image" />
                   <div class="product-info">
                     <h4 style="font-weight: bold; color: #000">
                       product code
@@ -338,7 +344,7 @@
               </div>
               <div class="col-md-3 mb-4">
                 <div class="card product-card">
-                  <img class="card-img-top product-img" src="imgs/dinamik-ayak.jpg" alt="Product Image" />
+                  <img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg" alt="Product Image" />
                   <div class="product-info">
                     <h4 style="font-weight: bold; color: #000">
                       product code
@@ -372,7 +378,7 @@
               </div>
               <div class="col-md-3 mb-4">
                 <div class="card product-card">
-                  <a href="product.details.html"><img class="card-img-top product-img" src="imgs/dinamik-ayak.jpg"
+                  <a href="product.details.html"><img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg"
                       alt="Product Image" /></a>
 
                   <div class="card-body">
@@ -385,7 +391,7 @@
               </div>
               <div class="col-md-3 mb-4">
                 <div class="card product-card">
-                  <a href="product.details.html"><img class="card-img-top product-img" src="imgs/dinamik-ayak.jpg"
+                  <a href="product.details.html"><img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg"
                       alt="Product Image" /></a>
 
                   <div class="card-body">
@@ -398,7 +404,7 @@
               </div>
               <div class="col-md-3 mb-4">
                 <div class="card product-card">
-                  <a href="product.details.html"><img class="card-img-top product-img" src="imgs/dinamik-ayak.jpg"
+                  <a href="product.details.html"><img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg"
                       alt="Product Image" /></a>
 
                   <div class="card-body">
@@ -411,7 +417,7 @@
               </div>
               <div class="col-md-3 mb-4">
                 <div class="card product-card">
-                  <a href="product.details.html"><img class="card-img-top product-img" src="imgs/dinamik-ayak.jpg"
+                  <a href="product.details.html"><img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg"
                       alt="Product Image" /></a>
 
                   <div class="card-body">
@@ -588,6 +594,9 @@
 
   <!-- side menu script -->
 
+
+  <!-- side menu script -->
+
   <script>
     // -------------------------------
     function showContent(contentId) {
@@ -607,45 +616,45 @@
 
 
   <!-- jquery Min JS -->
-  <script src="js/jquery.min.js"></script>
+  <script src="../js/jquery.min.js"></script>
   <!-- jquery Migrate JS -->
-  <script src="js/jquery-migrate-3.0.0.js"></script>
+  <script src="../js/jquery-migrate-3.0.0.js"></script>
   <!-- jquery Ui JS -->
-  <script src="js/jquery-ui.min.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
   <!-- Easing JS -->
-  <script src="js/easing.js"></script>
+  <script src="../js/easing.js"></script>
   <!-- Color JS -->
-  <script src="js/colors.js"></script>
+  <script src="../js/colors.js"></script>
   <!-- Popper JS -->
-  <script src="js/popper.min.js"></script>
+  <script src="../js/popper.min.js"></script>
   <!-- Bootstrap Datepicker JS -->
-  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="../js/bootstrap-datepicker.js"></script>
   <!-- Jquery Nav JS -->
-  <script src="js/jquery.nav.js"></script>
+  <script src="../js/jquery.nav.js"></script>
   <!-- Slicknav JS -->
-  <script src="js/slicknav.min.js"></script>
+  <script src="../js/slicknav.min.js"></script>
   <!-- ScrollUp JS -->
-  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="../js/jquery.scrollUp.min.js"></script>
   <!-- Niceselect JS -->
-  <script src="js/niceselect.js"></script>
+  <script src="../js/niceselect.js"></script>
   <!-- Tilt Jquery JS -->
-  <script src="js/tilt.jquery.min.js"></script>
+  <script src="../js/tilt.jquery.min.js"></script>
   <!-- Owl Carousel JS -->
-  <script src="js/owl-carousel.js"></script>
+  <script src="../js/owl-carousel.js"></script>
   <!-- counterup JS -->
-  <script src="js/jquery.counterup.min.js"></script>
+  <script src="../js/jquery.counterup.min.js"></script>
   <!-- Steller JS -->
-  <script src="js/steller.js"></script>
+  <script src="../js/steller.js"></script>
   <!-- Wow JS -->
-  <script src="js/wow.min.js"></script>
+  <script src="../js/wow.min.js"></script>
   <!-- Magnific Popup JS -->
-  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="../js/jquery.magnific-popup.min.js"></script>
   <!-- Counter Up CDN JS -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
   <!-- Bootstrap JS -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
   <!-- Main JS -->
-  <script src="js/main.js"></script>
+  <script src="../js/main-rtl.js"></script>
 </body>
 
 </html>

@@ -42,7 +42,7 @@
     <!-- Magnific Popup CSS -->
     <link rel="stylesheet" href="css/magnific-popup.css" />
 
-    <!-- Medipro CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
@@ -88,16 +88,8 @@
       <div class="topbar">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-4 col-md-3 col-12">
-              <!-- Contact ---->
-              <ul class="top-link">
-                <li><a href="#">About</a></li>
-                <li><a href="#">lorem</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-              <!-- End Contact -->
-            </div>
-            <div class="col-lg-7 col-md-6 col-12">
+            
+            <div class="col-lg-9 col-md-9 col-12">
               <!-- Top Contact -->
               <ul class="top-contact">
                 <li><i class="fa fa-phone"></i>+90 536 630 31 12</li>
@@ -113,12 +105,14 @@
               <!-- End Top Contact -->
             </div>
             <!-- language picker -->
-            <div class="col-lg-1 col-md-3 col-12">
-              <select id="language" onchange="changeLanguage()">
-                <option value="english">En</option>
-                <option value="turkish">Tr</option>
-                <option value="arabic">العربية</option>
-              </select>
+            <div class="col-lg-3 col-md-3 col-12">
+              <div class="language-picker">
+                <select id="language" onchange="changeLanguage()">
+                  <option value="english selected">English</option>
+                  <option value="turkish">Türkçe</option>
+                  <option value="arabic" >العربية</option>
+                </select>
+              </div>
             </div>
             <!-- end language picker -->
           </div>
@@ -148,21 +142,26 @@
                   <nav class="navigation">
                     <ul class="nav menu">
                       <li class="active"><a href="index.html">HOME </a></li>
-                      <li><a href="portfolio-details.html">ABOUT US </a></li>
+                      <li><a href="about.html">ABOUT US </a></li>
                       <li>
                         <a href="products.html"
                           >PRODUCTS <i class="icofont-rounded-down"></i
                         ></a>
                         <ul class="dropdown">
-                          <li><a href="index.html">Poduct 1</a></li>
-                          <li><a href="index.html">Poduct 2</a></li>
-                          <li><a href="index.html">Poduct 2</a></li>
+                          <li><a href="products.html#product1">CARBON FOOT</a></li>
+                          <li><a href="products.html">PROSTHETIC FEET</a></li>
+                          <li><a href="products.html">STRUCTURAL PART</a></li>
+                          <li><a href="products.html">KNEE JOINTS</a></li>
+                          <li><a href="products.html">SOCKET AND LOCKING SYSTEMS</a></li>
+                          <li><a href="products.html">COSTEMIC COVERS</a></li>
+                          <li><a href="products.html">COMPONENTS FOR CHILDREN</a></li>
+                          <li><a href="products.html">ORTHOTIC COMPONENTS</a></li>
                         </ul>
                       </li>
-                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="contact.html">CONTACT US</a></li>
                       <li>
                         <a href="#"
-                          >Pages <i class="icofont-rounded-down"></i
+                          >PAGES <i class="icofont-rounded-down"></i
                         ></a>
                         <ul class="dropdown">
                           <li><a href="404.html">404 Error</a></li>
@@ -201,7 +200,7 @@
                     <br />you need to live an active life.
                   </p>
                   <div class="button">
-                    <a href="#" class="btn">DETAILS</a>
+                    <a href="products.html" class="btn">DETAILS</a>
                   </div>
                 </div>
               </div>
@@ -221,11 +220,11 @@
                   <h1>SILICONE <span>LINERS</span></h1>
                   <p>
                     <!-- بطانة السيليكون - تعمل تقنية المواد المضافة المضادة للبكتيريا المتقدمة على حماية البطانة من البكتيريا والروائح الكريهة -->
-                    This translation is accurate and clear, and it follows the
+                    This translation is accurate and clear, <br /> and it follows the
                     same structure and meaning as the original sentence.
                   </p>
                   <div class="button">
-                    <a href="#" class="btn">DETAILS</a>
+                    <a href="products.html" class="btn">DETAILS</a>
                   </div>
                 </div>
               </div>
@@ -242,15 +241,15 @@
             <div class="row">
               <div class="col-lg-7">
                 <div class="text">
-                  <h1>HYDRAULIC <span>KNEE JOINTS</span></h1>
+                  <h1>HYDRAULIC <br /> <span>KNEE JOINTS</span></h1>
                   <p>
                     <!-- يوفر المفصل الهيدروليكي للركبة حركة طبيعية تشبه حركة الركبة الطبيعية. يسمح لك هذا بالمشي والجري  دون ألم أو صعوبة. -->
                     The hydraulic knee joint provides natural movement that
-                    mimics the natural movement of the knee. This allows you to
-                    walk and run without pain or difficulty.
+                    <br /> mimics the natural movement of the knee. This allows you to
+                    walk <br /> and run without pain or difficulty.
                   </p>
                   <div class="button">
-                    <a href="#" class="btn">DETAILS</a>
+                    <a href="products.html" class="btn">DETAILS</a>
                   </div>
                 </div>
               </div>
@@ -275,7 +274,7 @@
                     limbs.
                   </p>
                   <div class="button">
-                    <a href="#" class="btn">DETAILS</a>
+                    <a href="about-us.html" class="btn">DETAILS</a>
                   </div>
                 </div>
               </div>
@@ -369,6 +368,74 @@
       </div>
     </section>
     <!--/End Start schedule Area -->
+    
+    <!--about us -->
+    <section class="about-us why-choose section">
+      <div class="container">
+        <div class="inner">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <!-- Start Choose Left -->
+            <div class="about-left choose-left">
+              <h3>ABOUT US</h3>
+              <p>
+                Prsteel Prosthetics & Orthotics is a leading manufacturer of
+                prosthetic and orthotic components. The company was founded in
+                2015 and has since focused on the production of high-quality
+                lower limb prosthetic components. Prsteel's products meet the
+                needs of prosthetic providers around the world.
+              </p>
+              <p>
+                Prsteel produces a wide range of prosthetic components from
+                titanium and stainless steel, including:
+              </p>
+              
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul class="list">
+                    <li>
+                      <i class="fa fa-caret-right"></i>Knee joints.
+                    </li>
+                    <li>
+                      <i class="fa fa-caret-right"></i>Locking mechanisms.
+                    </li>
+                    <li>
+                      <i class="fa fa-caret-right"></i>Gel liners.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p>
+                <br />Prsteel's products are known for their high quality and
+                durability, helping people with limb loss live active and
+                healthy lives. The company is committed to providing prosthetic
+                providers with components that meet their needs and help them
+                provide the best possible care to patients.
+              </p>
+              <p>
+                In summary, Prsteel is a leading manufacturer of prosthetic
+                components, offering high-quality and innovative products that
+                meet the needs of people with limb loss.
+              </p>
+              <div class="button">
+                <a href="about.html" class="btn">SEE MORE</a>
+              </div>
+            </div>
+            <!-- End Choose Left -->
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="about-right">
+              <div class="about-img">
+                <img src="img/about-us.png" alt="">
+            </div>
+          </div>
+        </div>
+        </div></div>
+      </div>
+    </section>
+    <!--end about us -->
 
     <!-- (Start Feautes) -->
     <section class="Feautes section">
@@ -379,10 +446,10 @@
               <h5>
                 <!-- نسعى إلى التميز في جودة وإنتاج وتكنولوجيا مكونات الأطراف الاصطناعية، من خلال الموازنة بين معايير الجودة العالية والإنتاج المستمر والتكنولوجيا المتقدمة والتوزيع الفعال.  -->
 
-                We strive for excellence in the quality, production, and
+                <!-- We strive for excellence in the quality, production, and
                 technology of prosthetic components, by balancing high-quality
                 standards, consistent production, advanced technology, and
-                efficient distribution.
+                efficient distribution. -->
               </h5>
               <img src="img/section-img.png" alt="#" />
               <p></p>
@@ -465,15 +532,16 @@
               animation-name: fadeInUp;
             "
           >
-            <i class="fa fa-beer medium-icon"></i>
+          <i class="icofont icofont-bolt"></i>
             <span id="anim-number-pizza" class="counter-number"></span>
             <span
               class="timer counter alt-font appear"
               data-to="980"
               data-speed="7000"
-              >2800</span
+              >500</span
             >
-            <p class="counter-title">Years of Experience</p>
+            <p class="counter-title">product categories</p>
+            <p class="counter-title">and more</p>
           </div>
           <!-- end counter -->
           <!-- counter -->
@@ -486,14 +554,14 @@
               animation-name: fadeInUp;
             "
           >
-            <i class="fa fa-heart medium-icon"></i>
+          <i class="icofont icofont-architecture"></i>
             <span
               class="timer counter alt-font appear"
               data-to="980"
               data-speed="7000"
-              >980</span
+              >3000</span
             >
-            <span class="counter-title">Happy Clients</span>
+            <span class="counter-title">PROJECTS COMPLETED</span>
           </div>
           <!-- end counter -->
           <!-- counter -->
@@ -506,14 +574,14 @@
               animation-name: fadeInUp;
             "
           >
-            <i class="fa fa-anchor medium-icon"></i>
+          <i class="icofont-simple-smile"></i>
             <span
               class="timer counter alt-font appear"
               data-to="810"
               data-speed="7000"
-              >810</span
+              >1500</span
             >
-            <span class="counter-title">Projects Completed</span>
+            <span class="counter-title">Happy CLIENTS</span>
           </div>
           <!-- end counter -->
           <!-- counter -->
@@ -526,39 +594,39 @@
               animation-name: fadeInUp;
             "
           >
-            <i class="fa fa-user medium-icon"></i>
+          <i class="icofont icofont-table"></i>
             <span
               class="timer counter alt-font appear"
               data-to="600"
               data-speed="7000"
-              >600</span
+              >15</span
             >
-            <span class="counter-title">Clients Served</span>
+            <span class="counter-title">Years of Experience</span>
           </div>
           <!-- end counter -->
         </div>
       </div>
     </section>
-
     <!--/ End Fun-facts -->
 
-    <!-- Start Why choose -->
-    <section class="why-choose section">
+    <!-- CNC technology  -->
+    <section class="cnc-tech why-choose section">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title">
-              <h2>
-                CNC Technology in Artificial Limb Manufacturing: Precision
-                Defines a Better Life
-              </h2>
-              <img src="img/section-img.png" alt="#" />
-              <p>
+              <h5>
                 In the era of advanced digital technology,(CNC) machining has
                 become a leader in enhancing the lives of individuals with
                 artificial limbs. Employing this advanced technology represents
                 a revolutionary advancement in the design and manufacturing of
                 prosthetics.
+              </h5>
+              <br>
+              <br>
+              <img src="img/section-img.png" alt="#" />
+              <p>
+                
               </p>
             </div>
           </div>
@@ -635,8 +703,7 @@
         </div>
       </div>
     </section>
-
-    <!--/ End Why choose -->
+    <!--/ End CNC technology  -->
 
     <!-- Start Call to action -->
     <section class="call-action overlay" data-stellar-background-ratio="0.5">
@@ -645,19 +712,17 @@
           <div class="col-lg-12 col-md-12 col-12">
             <div class="content">
               <h2>
-                Do you need Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit
+                
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                porttitor dictum turpis nec gravida.
+                
               </p>
-              <div class="button">
+              <!-- <div class="button">
                 <a href="#" class="btn">Contact Now</a>
                 <a href="#" class="btn second"
                   >Learn More<i class="fa fa-long-arrow-right"></i
                 ></a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -695,27 +760,27 @@
                 <a href="portfolio-details.html" class="btn">View Details</a>
               </div>
               <div class="single-pf">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
+                <img src="imgs/05.jpg" alt="#" />
                 <a href="portfolio-details.html" class="btn">View Details</a>
               </div>
               <div class="single-pf">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
+                <img src="imgs/t4.jpg" alt="#" />
                 <a href="portfolio-details.html" class="btn">View Details</a>
               </div>
               <div class="single-pf">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
+                <img src="imgs/t1.jpg" alt="#" />
                 <a href="portfolio-details.html" class="btn">View Details</a>
               </div>
               <div class="single-pf">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
+                <img src="imgs/04.jpg" alt="#" />
                 <a href="portfolio-details.html" class="btn">View Details</a>
               </div>
               <div class="single-pf">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
+                <img src="imgs/03.jpg" alt="#" />
                 <a href="portfolio-details.html" class="btn">View Details</a>
               </div>
               <div class="single-pf">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
+                <img src="imgs/01.jpg" alt="#" />
                 <a href="portfolio-details.html" class="btn">View Details</a>
               </div>
             </div>
@@ -747,7 +812,7 @@
           <div class="col-lg-4 col-md-6 col-12">
             <!-- Start Single Service -->
             <div class="single-service">
-              <i class="icofont icofont-prescription"></i>
+              <i class="icofont-ui-check"></i>
               <h4>
                 <a href="service-details.html">Advanced CNC Technology: </a>
               </h4>
@@ -762,7 +827,7 @@
           <div class="col-lg-4 col-md-6 col-12">
             <!-- Start Single Service -->
             <div class="single-service">
-              <i class="icofont-shield"></i>
+              <i class="icofont-ui-check"></i>
               <h4>
                 <a href="service-details.html"
                   >Customized and Personalized Design:</a
@@ -779,7 +844,7 @@
           <div class="col-lg-4 col-md-6 col-12">
             <!-- Start Single Service -->
             <div class="single-service">
-              <i class="icofont icofont-heart-alt"></i>
+              <i class="icofont-ui-check"></i>
               <h4>
                 <a href="service-details.html"
                   >Lightweight and High Durability:</a
@@ -796,7 +861,7 @@
           <div class="col-lg-4 col-md-6 col-12">
             <!-- Start Single Service -->
             <div class="single-service">
-              <i class="icofont-shield"></i>
+              <i class="icofont-ui-check"></i>
               <h4>
                 <a href="service-details.html"
                   >Advanced and Sustainable Materials:</a
@@ -814,7 +879,7 @@
           <div class="col-lg-4 col-md-6 col-12">
             <!-- Start Single Service -->
             <div class="single-service">
-              <i class="icofont icofont-eye-alt"></i>
+              <i class="icofont-ui-check"></i>
               <h4>
                 <a href="service-details.html"
                   >After-Sales Services and Technical Support:</a
@@ -832,7 +897,7 @@
           <div class="col-lg-4 col-md-6 col-12">
             <!-- Start Single Service -->
             <div class="single-service">
-              <i class="icofont-shield"></i>
+              <i class="icofont-ui-check"></i>
               <h4>
                 <a href="service-details.html"
                   >Communication and Interaction Technology:</a
@@ -856,113 +921,116 @@
     </section>
     <!--/ End service -->
 
-    <!-- Pricing Table -->
-
-    <!--/ End Pricing Table -->
-
-    <!-- Start Blog Area -->
-
-    <!-- End Blog Area -->
-
-    <!-- Start clients -->
-    <div class="clients overlay">
-      <!-- <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-12">
-            <div class="owl-carousel clients-slider">
-              <div class="single-clients">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
-              </div>
-              <div class="single-clients">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
-              </div>
-              <div class="single-clients">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
-              </div>
-              <div class="single-clients">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
-              </div>
-              <div class="single-clients">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
-              </div>
-              <div class="single-clients">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
-              </div>
-              <div class="single-clients">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
-              </div>
-              <div class="single-clients">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
-              </div>
-              <div class="single-clients">
-                <img src="imgs/ORT-95_600.jpg" alt="#" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-    </div>
-    <!--/Ens clients -->
-
-    <!-- Start Appointment -->
-    <section class="appointment">
+    <!-- empty section------------------------------------ -->
+    <section class="call-action overlay" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <div class="section-title">
-              <h2>We Are Always Ready to Help You. Book An Appointment</h2>
-              <img src="img/section-img.png" alt="#" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
-                aliquet. pretiumts
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-12 col-12">
-            <form class="form" action="#">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-group">
-                    <input name="name" type="text" placeholder="Name" />
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-group">
-                    <input name="email" type="email" placeholder="Email" />
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-group">
-                    <input name="phone" type="text" placeholder="Phone" />
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-group"></div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12"></div>
-
-                <div class="col-lg-12 col-md-12 col-12">
-                  <div class="form-group">
-                    <textarea
-                      name="message"
-                      placeholder="Write Your Message Here....."
-                    ></textarea>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <div class="appointment-image">
-              <img src="imgs/contact.jpg" alt="#" />
-            </div>
+          <div class="col-lg-12 col-md-12 col-12">
+            <div class="content"></div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Appointment -->
+    <!--end empty section------------------------------ -->
+
+    <!-- contact-us section -->
+    <section class="contact-us section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>Stay in touch </h2>
+              <img src="img/section-img.png" alt="#" />
+              <p>
+                for more information You can also follow us on our social media channels or contact us via email
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="inner">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact-us-left">
+              <img src="img/contact.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact-us-form">
+              <h2>Contact With Us</h2>
+              <p>
+                If you have any questions please fell free to contact with us.
+              </p>
+              <!-- Form -->
+              <form class="form" method="post" action="mail/mail.php">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="phone"
+                        placeholder="Phone"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea
+                        name="message"
+                        placeholder="Your Message"
+                        required=""
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group login-btn">
+                      <button class="btn" type="submit">Send</button>
+                    </div>
+                    <div class="checkbox">
+                      <label class="checkbox-inline" for="2"
+                        ><input name="news" id="2" type="checkbox" />Do you
+                        want to subscribe our Newsletter ?</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <!--/ End Form -->
+            </div>
+          </div>
+        </div></div>
+    </section>
+    <!-- End contact-us section-->
 
     <!-- Start Newsletter Area -->
     <section class="newsletter section">

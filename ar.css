@@ -1,24 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+/*my font*/
+
+@font-face {
+    font-family: "29ltbukrabold";
+    src: url("../fonts/29ltbukrabold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "29ltbukralight";
+    src: url("../fonts/29ltbukralight.otf");
+    font-weight: light;
+}
+
+@font-face {
+    font-family: "29ltbukrabolditalic";
+    src: url("../fonts/29ltbukrabolditalic.otf");
+    font-weight: bolditalic;
+}
+
+/*-------*/
+
+
+
+/* .header .top-contact {
+    float: inline-end;
+}
+.header .language-picker{
+	float: inline-start;
+} */
+/*===========================
+	Start Hero Area CSS reset
+=============================*/
+
 @media only screen and (max-width: 767px){
 .slider .single-slider {
     
     background-position: left;
 }}
-
 @media only screen and (max-width: 450px){
-.slider .single-slider {
-    
-    background-position: left;
-}}
-@media only screen and (max-width: 360px){
-.slider .single-slider {
-    
-    background-position: left;
-}}
+    .slider .single-slider {
+        
+        background-position: left;
+    }}
 
-----------------
 
+/*=============================
+	Start Schedule CSS
+===============================*/
+
+.schedule .single-schedule{
+        text-align: right;
+}
+/*=============================
+	Start Feautes CSS reset
+===============================*/
+.Feautes .single-features {
+    position: relative;
+}
 .Feautes .single-features::before {
     right: auto;
-	left: -72px;
+    left: -72px;
+}
+
+
+
+/*=======================
+	Start counter Fun Facts CSS
+=========================*/
+
+
+/*===================
+	Why choose CSS reset
+=====================*/
+
+.why-choose .choose-left h3:before {
+    left: auto;
+    right: 0;
+    
+}
+
+/*=========================
+	Srart service CSS reset
+===========================*/
+
+.services .single-service i{
+	
+	left:auto;
+    right: 0;
 	
 }
+/*=========================
+	contact us page reset
+===========================*/
+.contact-us .contact-us-form h2{
+    text-align: right;
+}
+.contact-us .contact-us-form p{
+    text-align: right;
+}
+
+

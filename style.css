@@ -46,6 +46,9 @@ Version:	1.1
 * Footer CSS
 ========================================*/ 
 
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
 :root {
     
     --main-color: #000000;
@@ -57,14 +60,14 @@ Version:	1.1
 }
 
 /*=============================
-	Global CSS 
+	Global CSS 'Poppins'
 ===============================*/
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
 	font-weight: 400;
 	font-size:14px;
-	color:#ffffff;
+	color:#000000;
 }
 
 
@@ -216,9 +219,14 @@ body{
 	padding:8px 0;
 }
 .header .top-link {
-    float: inline-start;
-    margin-inline-start: 10%;
+    float: inline-end;
+    
 }
+.header .language-picker{
+	float: inline-end;
+    /* margin-inline-end: 3%; */
+}
+
 .header .top-link li{
 	display:inline-block;
 	margin-right:15px;
@@ -235,8 +243,12 @@ body{
 	color:#aecb06;
 }
 .header .top-contact {
-    float: inline-end;
-    margin-inline-end: 3%;
+    float: inline-start;
+    margin-inline-start: 3%;
+}
+.header .language-picker{
+	float: inline-end;
+    margin-inline-end: 10%;
 }
 .header .top-contact li{
 	display:inline-block;
@@ -253,11 +265,15 @@ body{
 	color:#aecb06;
 }
 .header .top-contact li i{
-	color:#aecb06;
-	margin-right:8px;
+	
+	color: #aecb06;
+	margin-inline-end: 10px;
+    margin-inline-start: 50px;
+	
 }
 
 /*----------- language picker--------------- */
+
 
 .nice-select {
     background-color: #565655;
@@ -289,11 +305,12 @@ body{
 }
 
 /*-----------end  language picker--------------- */
+
 .header .header-inner {
 	background:#aecb06;
 	z-index:999;
 	width:100%;
-	height: 105px;
+	height: 75px;
 }
 /* For mobile devices */
 @media (max-width: 767px) {
@@ -309,7 +326,7 @@ body{
 }
 .header .logo {
 	float: left;
-	margin-top: 10px;
+	margin-top: 9px;
 }
 .header .navbar {
 	background: none;
@@ -328,7 +345,7 @@ body{
 }
 .header .nav>li{
 	/* my option style */
-	top: 20px;
+	top: 3px;
 }
 .header .nav li:last-child{
 	margin:0;
@@ -347,7 +364,7 @@ body{
 	position: absolute;
 	content: "";
 	left: 0;
-	bottom: 0;
+	bottom: 9px;
 	height: 3px;
 	width:0%;
 	background: #070707;
@@ -472,15 +489,16 @@ body{
 	border:none;
 }
 .header .nav li .dropdown li a {
-	padding: 12px 15px;
+    padding: 6px 3px;
 	color: white;
 	display: block;
-	font-weight: 400;
+	font-weight: 300;
 	text-transform: capitalize;
 	background: transparent;
 	-webkit-transition:all 0.2s ease;
 	-moz-transition:all 0.2s ease;
 	transition:all 0.2s ease;
+	font-size: 12px;
 }
 .header .nav li .dropdown li a:before{
 	display:none;
@@ -582,7 +600,7 @@ body{
 .header.sticky .header-inner{
 	position:fixed;
 	z-index:999;
-	top:0;
+	top:20px;
 	left:0;
 	bottom:initial;
 	-webkit-transition:all 0.4s ease;
@@ -590,7 +608,7 @@ body{
 	transition:all 0.4s ease;
 	animation: fadeInDown 0.5s both 0.1s;
 	box-shadow:0px 0px 13px #00000054;
-	height: 105px;
+	height: 78px;
 }
 /* For mobile devices */
 @media (max-width: 767px) {
@@ -636,12 +654,19 @@ body{
 	margin-top:30px;
 }
 .slider .single-slider .btn{
-	color:#fff;
+	color:#050505;
 	background:#aecb06;
 	font-weight:500;
 	display:inline-block;
 	margin:0;
 	margin-right:10px;
+}
+.slider .single-slider .btn:hover{
+	color:#ffffff;
+	
+}
+.slider .single-slider .btn:before{
+	background-color:#000000;
 }
 .slider .single-slider .btn:last-child{
 	margin:0;
@@ -849,7 +874,62 @@ body{
 /*=============================
 	End Schedule CSS
 ===============================*/
+/*=============================
+	Start ABOUT-US CSS
+===============================*/
+.about-us .inner {
+    box-shadow: 0px 0px 10px #00000024;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.about-us .about-left{
+	padding: 50px 40px;
+}
+.about-us  .about-right {
+    height: 100%;
+    width: 100%;
+    background-color: #525251;
+   /* padding: 25px; */
+}
 
+
+.about-us-page{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.about-us-page .body-text h3{
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.about-us-page .body-text li{
+	color: #868686;
+    margin-bottom: 12px;
+}
+.about-us-page .body-text li i {
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    text-align: center;
+    background: #aecb06;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 100%;
+    padding-left: 2px;
+    margin-right: 16px;
+}
+.about-us-page .body-text .Achievements-img img{
+	display: inline-block;
+    width: 30%;
+    height: auto;
+    padding: 5px;
+    margin-inline-start: 60px;
+}
+
+
+/*=============================
+	END ABOUT-US CSS
+===============================*/
 /*=============================
 	Start Feautes CSS
 ===============================*/
@@ -917,8 +997,9 @@ body{
 ===============================*/
 
 /*=======================
-	Start Fun Facts CSS
+	Start counter Fun Facts CSS
 =========================*/
+
 .fun-facts{
 	position:relative;
 }
@@ -926,63 +1007,36 @@ body{
 	padding:120px 0;
 }
 .fun-facts{
-	background:url('img/fun-bg.jpg');
+	background:url('img/handshake1.jpg');
 	background-size:cover;
 	background-repeat:no-repeat;
 }
 
-.fun-facts .single-fun i {
-	position: absolute;
-	left: 0;
-	font-size: 62px;
-	color: #fff;
-	height: 70px;
-	width: 70px;
-	line-height: 67px;
-	font-size: 28px;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-	border: 2px solid #fff;
-	border-radius: 0px;
-	top: 50%;
-	margin-top: -35px;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-	border-radius: 50%;
-}
-.fun-facts .single-fun:hover i{
-	color:#aecb06;
-	background:#fff;
-	border-color:transparent;
-}
-.fun-facts .single-fun .content {
-	padding-left: 80px;
-}
-.fun-facts .single-fun span {
-	color: #fff;
-	font-weight: 600;
-	font-size: 30px;
-	position: relative;
-	display: block;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	transition: all 0.4s eas;
-	display: block;
-	margin-bottom: 7px;
-}
-.fun-facts .single-fun p{
-	color:#fff;
-	font-size:15px;
-}
+
 
   /* my counter style */
+  .counter-section{
+    z-index: 1;
+}
 
+  .counter-section i { 
+	display:block; 
+	margin:0 0 15px;
+	color: #525251;
+    font-size: 60px;
+}
+  .counter-section span.counter {
+	 font-size:40px; color:white;
+	  line-height:60px; display:block; font-family: "Oswald",sans-serif; 
+	  letter-spacing: 2px;
+	  font-weight: 600;
+	}
+  .counter-title{ 
+	font-size:15px; letter-spacing:2px; 
+	text-transform: uppercase;
+	color: #525251;
 
-  .counter-section i { display:block; margin:0 0 10px}
-  .counter-section span.counter { font-size:40px; color:#000; line-height:60px; display:block; font-family: "Oswald",sans-serif; letter-spacing: 2px}
-  .counter-title{ font-size:12px; letter-spacing:2px; text-transform: uppercase}
+}
   .counter-icon {top:25px; position:relative}
   .counter-style2 .counter-title {letter-spacing: 0.55px; float: left;}
   .counter-style2 span.counter {letter-spacing: 0.55px; float: left; margin-right: 10px;}
@@ -1007,7 +1061,7 @@ body{
 	color:black;
 	position:relative;
 	padding-bottom:20px;
-	margin-bottom:24px;
+	margin-bottom:90px;
 }
 .why-choose .choose-left h3:before{
 	position:absolute;
@@ -1039,7 +1093,7 @@ body{
 	font-size:14px;
 	border-radius:100%;
 	padding-left:2px;
-	margin-right:16px;
+	margin-inline-end:16px;
 }
 /* Start Faq CSS */
 .why-choose{
@@ -1108,7 +1162,7 @@ body{
 	Start Call to action CSS
 =================================*/
 .call-action{
-	background-image:url('img/call-bg.jpg');
+	background-image:url('img/handshake1.jpg');
 	background-size:cover;
 	background-position:center;
 	position:relative;
@@ -1359,7 +1413,7 @@ body{
 .services .single-service{
 	margin:30px 0;
 	position:relative;
-	padding-left:70px;
+	padding-inline-start:70px;
 }
 .services .single-service i{
 	font-size:45px;
@@ -4198,7 +4252,7 @@ body{
 	color:black;
 }
 .footer .copyright{
-	background:#aecb06;
+	background:#000000;
 	padding:25px 0px 25px 0px;
 	text-align:center;
 }
