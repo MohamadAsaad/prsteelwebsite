@@ -431,7 +431,7 @@ Preloader Area CSS
 	font-size: 14px;
 	text-transform: capitalize;
 	font-weight: 500;
-	background: #565655;
+	background: #aecb06;
 	position: relative;
 	box-shadow: none;
 	display: inline-block;
@@ -455,7 +455,7 @@ Preloader Area CSS
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: #2C2D3F;
+	background: #525251;
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
 	-webkit-transform-origin: 50%;
@@ -501,13 +501,13 @@ Preloader Area CSS
 	top:0;
 	height:100%;
 	width:100%;
-	background:#000000;
+	background:#aecb06;
 	opacity:0.8;
 }
 /* Bread Crumbs */
 .breadcrumbs {
-	background-image: url('../img/bread-bg.jpg');
-	background-size: cover;
+	/* background-image: url('../img/bread-bg.jpg');
+	background-size: cover; */
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
@@ -647,7 +647,7 @@ dd {
 .logo img {
 	height: auto;
 	/* Make sure images are scaled correctly. */
-	max-width: 100%;
+	max-width: 70%;
 	/* Adhere to container width. */
 }
 /* For mobile devices */
