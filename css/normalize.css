@@ -508,6 +508,7 @@ Preloader Area CSS
 .breadcrumbs {
 	/* background-image: url('../img/bread-bg.jpg');
 	background-size: cover; */
+	background-color: #565655;
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
@@ -1105,6 +1106,5 @@ object {
   transform-origin:bottom left
  }
 }
-
 
 

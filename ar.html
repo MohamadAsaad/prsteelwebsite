@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
   <!-- Meta Tags -->
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="keywords" content="Site keywords here" />
   <meta name="description" content="" />
@@ -14,14 +15,14 @@
   <title>prsteel</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="img/favicon.png" />
+  <link rel="icon" href="img/PrsteelLogo.png" />
 
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
     rel="stylesheet" />
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
   <!-- Nice Select CSS -->
   <link rel="stylesheet" href="css/nice-select.css" />
   <!-- Font Awesome CSS -->
@@ -39,23 +40,27 @@
   <!-- Magnific Popup CSS -->
   <link rel="stylesheet" href="css/magnific-popup.css" />
 
-  <!-- CSS -->
+  <!--  CSS -->
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="ar.css" />
 
+  <!-- language picker -->
   <script>
     function changeLanguage() {
       var language = document.getElementById("language").value;
-      if (language == "english") {
-        window.location.href = "index.html";
+      if (language == "arabic") {
+        window.location.href = "ar.html";
       } else if (language == "turkish") {
         window.location.href = "tr.html";
-      } else if (language == "arabic") {
-        window.location.href = "ar.html";
+      } else if (language == "english") {
+        window.location.href = "index.html";
       }
     }
   </script>
+  <!-- end language picker -->
+
 </head>
 
 <body>
@@ -75,16 +80,14 @@
   </div>
   <!-- End Preloader -->
 
-  <!-- Get Pro Button -->
-
   <!-- Header Area -->
   <header class="header">
     <!-- Topbar -->
-    <div class="topbar">
+    <div class="topbar" dir="ltr">
       <div class="container-fluid">
         <div class="row">
 
-          <div class="col-lg-9 col-md-9 col-9">
+          <div class="col-lg-9 col-md-9 col-12">
             <!-- Top Contact -->
             <ul class="top-contact">
               <li><i class="fa fa-phone"></i>+90 536 630 31 12</li>
@@ -99,12 +102,12 @@
             <!-- End Top Contact -->
           </div>
           <!-- language picker -->
-          <div class="col-lg-3 col-md-3 col-3">
+          <div class="col-lg-3 col-md-3 col-12">
             <div class="language-picker">
               <select id="language" onchange="changeLanguage()">
-                <option value="english selected">English</option>
+                <option value="english">English</option>
                 <option value="turkish">Türkçe</option>
-                <option value="arabic">العربية</option>
+                <option value="arabic" selected>العربية</option>
               </select>
             </div>
           </div>
@@ -114,14 +117,14 @@
     </div>
     <!-- End Topbar -->
     <!-- Header Inner -->
-    <div class="header-inner">
+    <div class="header-inner" dir="ltr">
       <div class="container">
         <div class="inner">
           <div class="row">
             <div class="col-lg-3 col-md-3 col-12">
               <!-- Start Logo -->
               <div class="logo">
-                <a href="index.html"><img src="img/PrsteelLogo.png" alt="PrsteelLogo" /></a>
+                <a href="ar.html"><img src="img/PrsteelLogo.png" alt="PrsteelLogo" /></a>
               </div>
               <!-- End Logo -->
               <!-- Mobile Nav -->
@@ -133,29 +136,30 @@
               <div class="main-menu">
                 <nav class="navigation">
                   <ul class="nav menu">
-                    <li class="active"><a href="index.html">HOME </a></li>
-                    <li><a href="about.html">ABOUT US </a></li>
                     <li>
-                      <a href="products.html">PRODUCTS <i class="icofont-rounded-down"></i></a>
-                      <ul class="dropdown">
-                        <li><a href="products.html#product1">CARBON FOOT</a></li>
-                        <li><a href="products.html">PROSTHETIC FEET</a></li>
-                        <li><a href="products.html">STRUCTURAL PART</a></li>
-                        <li><a href="products.html">KNEE JOINTS</a></li>
-                        <li><a href="products.html">SOCKET AND LOCKING SYSTEMS</a></li>
-                        <li><a href="products.html">COSTEMIC COVERS</a></li>
-                        <li><a href="products.html">COMPONENTS FOR CHILDREN</a></li>
-                        <li><a href="products.html">ORTHOTIC COMPONENTS</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                    <li>
-                      <a href="#">PAGES <i class="icofont-rounded-down"></i></a>
+                      <a href="#">الصفحات</a>
                       <ul class="dropdown">
                         <li><a href="404.html">404 Error</a></li>
-                        <li><a href="details.html">details</a></li>
+                        <li><a href="ar/details.html">details</a></li>
                       </ul>
                     </li>
+                    <li><a href="/ar/contact.html">الاتصال</a></li>
+                    <li>
+                      <a href="ar/products.html">المنتجات <i class="icofont-rounded-down"></i></a>
+                      <ul class="dropdown">
+                        <li><a href="ar/products.html#product1">CARBON FOOT</a></li>
+                        <li><a href="ar/products.html">PROSTHETIC FEET</a></li>
+                        <li><a href="ar/products.html">STRUCTURAL PART</a></li>
+                        <li><a href="ar/products.html">KNEE JOINTS</a></li>
+                        <li><a href="ar/products.html">SOCKET AND LOCKING SYSTEMS</a></li>
+                        <li><a href="ar/products.html">COSTEMIC COVERS</a></li>
+                        <li><a href="ar/products.html">COMPONENTS FOR CHILDREN</a></li>
+                        <li><a href="ar/products.html">ORTHOTIC COMPONENTS</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="ar/about.html">من نحن </a></li>
+
+                    <li class="active"><a href="ar.html">الرئيسية </a></li>
                   </ul>
                 </nav>
               </div>
@@ -173,20 +177,23 @@
   <section class="slider">
     <div class="hero-slider">
       <!-- Start Single Slider -->
-      <div class="single-slider" style="background-image: url('img/slider1.jpg')">
+      <div class="single-slider" style="background-image: url('img/slider-ar1.jpg')">
         <div class="container">
           <div class="row">
             <div class="col-lg-7">
               <div class="text">
-                <h1>CARBON <span>FOOT </span></h1>
+                <h1>أقدام <span>الكربون</span></h1>
                 <p>
-                  <!-- مصنوعة من مواد خفيفة الوزن ومتينة، توفر لك قدم الكربونية حرية الحركة والاستقرار الذي تحتاجه لعيش حياة أفضل.-->
-                  Made from lightweight and durable materials,
-                  carbon feet give you the freedom of movement and stability
-                  you need to live an active life.
+                  مصنوعة من مواد خفيفة الوزن ومتينة،
+                  <br>
+                  توفر لك قدم الكربونية حرية الحركة
+
+                  والاستقرار الذي تحتاجه لعيش حياة أفضل.
+                  <br>
+
                 </p>
                 <div class="button">
-                  <a href="products.html" class="btn">DETAILS</a>
+                  <a href="products.html" class="btn">التفاصيل</a>
                 </div>
               </div>
             </div>
@@ -195,19 +202,20 @@
       </div>
       <!-- End Single Slider -->
       <!-- Start Single Slider -->
-      <div class="single-slider" style="background-image: url('img/slider2.jpg')">
+      <div class="single-slider" style="background-image: url('img/slider-ar2.jpg')">
         <div class="container">
           <div class="row">
             <div class="col-lg-7">
               <div class="text">
-                <h1>SILICONE <span>LINERS</span></h1>
+                <h1>بطانة <span>السيليكون</span></h1>
                 <p>
-                  <!-- بطانة السيليكون - تعمل تقنية المواد المضافة المضادة للبكتيريا المتقدمة على حماية البطانة من البكتيريا والروائح الكريهة -->
-                  This translation is accurate and clear, and it follows the
-                  same structure and meaning as the original sentence.
+                  بطانة السيليكون تعمل تقنية المواد المضافة المضادة للبكتيريا المتقدمة
+                  <br>
+                  على حماية البطانة من البكتيريا والروائح الكريهة
+
                 </p>
                 <div class="button">
-                  <a href="products.html" class="btn">DETAILS</a>
+                  <a href="products.html" class="btn">التفاصيل</a>
                 </div>
               </div>
             </div>
@@ -216,42 +224,39 @@
       </div>
       <!-- Start End Slider -->
       <!-- Start Single Slider -->
-      <div class="single-slider" style="background-image: url('img/slider3.jpg')">
+      <div class="single-slider" style="background-image: url('img/slider-ar3.jpg')">
         <div class="container">
           <div class="row">
             <div class="col-lg-7">
               <div class="text">
-                <h1>HYDRAULIC <br /> <span>KNEE JOINTS</span></h1>
+                <h1>المفصل <span>الهيدروليكي</span></h1>
                 <p>
-                  <!-- يوفر المفصل الهيدروليكي للركبة حركة طبيعية تشبه حركة الركبة الطبيعية. يسمح لك هذا بالمشي والجري  دون ألم أو صعوبة. -->
-                  The hydraulic knee joint provides natural movement that
-                  mimics the natural movement of the knee. This allows you to
-                  walk and run without pain or difficulty.
+                  يوفر المفصل الهيدروليكي للركبة حركة طبيعية تشبه حركة الركبة الطبيعية.
+                  <br>
+                  يسمح لك هذا بالمشي والجري دون ألم أو صعوبة.
+
                 </p>
                 <div class="button">
-                  <a href="products.html" class="btn">DETAILS</a>
+                  <a href="products.html" class="btn">التفاصيل</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="single-slider" style="background-image: url('img/slider4.jpg')">
+      <div class="single-slider" style="background-image: url('img/slider-ar4.jpg')">
         <div class="container">
           <div class="row">
             <div class="col-lg-7">
               <div class="text">
-                <h1>New <br /><span>Beginning </span></h1>
+                <h1>انطلاقة <span>جديدة </span></h1>
                 <p>
-                  <!-- بداية جديدة للشركة تحت اسم برستيل حيث نكرس خبرتنا لانتاج الاطراف الاصطناعية عالية الجودة  -->
-
-                  A new beginning for the company <br> under the name
-                  <span style="color: #aecb06"> Prsteel</span> , where we
-                  devote our expertise to producing high-quality prosthetic
-                  limbs.
+                  بداية جديدة للشركة تحت اسم
+                  <span style="color: #aecb06"> برستيل </span><br />
+                  حيث نكرس خبرتنا لانتاج الاطراف الاصطناعية عالية الجودة
                 </p>
                 <div class="button">
-                  <a href="about-us.html" class="btn">DETAILS</a>
+                  <a href="about-us.html" class="btn">التفاصيل</a>
                 </div>
               </div>
             </div>
@@ -276,14 +281,12 @@
                   <i class="fa fa-ambulance"></i>
                 </div>
                 <div class="single-content">
-                  <span>Lorem Amet</span>
-                  <h4>DESIGN</h4>
+                  <span>1</span>
+                  <h4>التصميم</h4>
                   <p>
-                    <!-- نسعى إلى تصميم أطراف صناعية أكثر كفاءة وسهولة في الاستخدام، مما سيمنح الأشخاص ذوي الإعاقة الحركية مزيدًا من الاستقلالية والقدرة على المشاركة الكاملة في المجتمع. -->
-                    We strive to design prosthetics that are more efficient
-                    and user-friendly, giving people with mobility impairments
-                    greater independence and the ability to fully participate
-                    in society.
+                    نسعى إلى تصميم أطراف صناعية أكثر كفاءة وسهولة في الاستخدام، مما سيمنح الأشخاص ذوي الإعاقة الحركية
+                    مزيدًا من الاستقلالية والقدرة على المشاركة الكاملة في المجتمع.
+
                   </p>
                   <!-- <a href="#"
                       >LEARN MORE<i class="fa fa-long-arrow-right"></i
@@ -300,14 +303,12 @@
                   <i class="icofont-prescription"></i>
                 </div>
                 <div class="single-content">
-                  <span>Fusce Porttitor</span>
-                  <h4>PRODUCTION</h4>
+                  <span>2</span>
+                  <h4>الانتاج</h4>
                   <p>
-                    <!-- ي مرحلة الإنتاج، يحول فريقنا الفني المُحترف في المصنع التصميم المتقن للأطراف الاصطناعية إلى منتج حقيقي يمنح الأشخاص القدرة على الحركة الطبيعية. -->
-                    In the production phase, our experienced technical team in
-                    the factory transforms the meticulous design of the
-                    prosthetics into a real product that gives people the
-                    ability to move naturally.
+                    ي مرحلة الإنتاج، يحول فريقنا الفني المُحترف في المصنع التصميم المتقن للأطراف الاصطناعية إلى منتج
+                    حقيقي يمنح الأشخاص القدرة على الحركة الطبيعية.
+
                   </p>
                   <!-- <a href="#"
                       >LEARN MORE<i class="fa fa-long-arrow-right"></i
@@ -324,13 +325,12 @@
                   <i class="icofont-ui-clock"></i>
                 </div>
                 <div class="single-content">
-                  <span>TEST</span>
-                  <h4>TEST</h4>
+                  <span>3</span>
+                  <h4>التجربة</h4>
                   <p>
-                    <!-- يخضع منتجاتنا المصنعة في مصنعنا لاختبارات مكثفة من قبل فريق الاختبار لدينا، بمرافقة مهندسينا، قبل إرسالها إلى المستخدم النهائي. -->
-                    Our products produced in our factory are subjected to
-                    rigorous testing by our test team, accompanied by our
-                    engineers, before they are sent to the end user.
+                    يخضع منتجاتنا المصنعة في مصنعنا لاختبارات مكثفة من قبل فريق الاختبار لدينا، بمرافقة مهندسينا، قبل
+                    إرسالها إلى المستخدم النهائي.
+
                   </p>
 
                   <!-- <a href="#"
@@ -354,17 +354,14 @@
           <div class="col-lg-6 col-12">
             <!-- Start Choose Left -->
             <div class="about-left choose-left">
-              <h3>ABOUT US</h3>
+              <h3>من نحن</h3>
               <p>
-                Prsteel Prosthetics & Orthotics is a leading manufacturer of
-                prosthetic and orthotic components. The company was founded in
-                2015 and has since focused on the production of high-quality
-                lower limb prosthetic components. Prsteel's products meet the
-                needs of prosthetic providers around the world.
+                Prsteel Prosthetics & Orthotics هي شركة تصنيع مكونات الأطراف الاصطناعية والمساند التقويمية. تأسست الشركة
+                في عام 2015، ومنذ ذلك الحين، ركزت على إنتاج مكونات الأطراف الاصطناعية السفلية عالية الجودة. تلبي منتجات
+                الشركة احتياجات مقدمي الأطراف الاصطناعية في جميع أنحاء العالم.
               </p>
               <p>
-                Prsteel produces a wide range of prosthetic components from
-                titanium and stainless steel, including:
+                تنتج Prsteel مجموعة واسعة من مكونات الأطراف الاصطناعية من التيتانيوم والفولاذ المقاوم للصدأ، بما في ذلك:
               </p>
 
 
@@ -372,32 +369,33 @@
                 <div class="col-lg-12">
                   <ul class="list">
                     <li>
-                      <i class="fa fa-caret-right"></i>Knee joints.
+                      <i class="fa fa-caret-left"></i>مفاصل الركبة.
                     </li>
                     <li>
-                      <i class="fa fa-caret-right"></i>Locking mechanisms.
+                      <i class="fa fa-caret-left"></i>الأقفال المكوكية.
+
                     </li>
                     <li>
-                      <i class="fa fa-caret-right"></i>Gel liners.
+                      <i class="fa fa-caret-left"></i>جرابات السليكون اللاينر.
                     </li>
                   </ul>
                 </div>
               </div>
 
               <p>
-                <br />Prsteel's products are known for their high quality and
-                durability, helping people with limb loss live active and
-                healthy lives. The company is committed to providing prosthetic
-                providers with components that meet their needs and help them
-                provide the best possible care to patients.
+                <br />تتميز منتجات Prsteel بجودتها العالية ومتانتها، مما يساعد الأشخاص الذين يعانون من فقدان الأطراف على
+                العيش حياة نشطة وصحية.
               </p>
               <p>
-                In summary, Prsteel is a leading manufacturer of prosthetic
-                components, offering high-quality and innovative products that
-                meet the needs of people with limb loss.
+                تلتزم Prsteel بتزويد مقدمي الأطراف الاصطناعية بمكونات عالية الجودة تلبي احتياجاتهم وتساعدهم على توفير
+                أفضل رعاية ممكنة للمرضى.
+              </p>
+              <p>
+                باختصار، Prsteel هي شركة رائدة في مجال تصنيع مكونات الأطراف الاصطناعية، تقدم منتجات عالية الجودة ومبتكرة
+                تلبي احتياجات الأشخاص الذين يعانون من فقدان الأطراف.
               </p>
               <div class="button">
-                <a href="about.html" class="btn">SEE MORE</a>
+                <a href="about.html" class="btn">اعرف المزيد عنا</a>
               </div>
             </div>
             <!-- End Choose Left -->
@@ -442,14 +440,11 @@
               <i class="icofont-brand-nike"></i>
               <!-- <i class="icofont-thumbs-up"></i> -->
             </div>
-            <h3>Quality</h3>
+            <h3>الجودة</h3>
             <p>
-              <!-- 
-                  نضمن لك منتجات عالية الجودة بتصميم متميز، تم تصميمها وتصنيعها وفقًا لأعلى المعايير الألمانية.
-                  -->
-              We guarantee high-quality products with a distinctive design,
-              designed and manufactured according to the highest German
-              standards.
+
+              نضمن لك منتجات عالية الجودة بتصميم متميز، تم تصميمها وتصنيعها وفقًا لأعلى المعايير الألمانية.
+
             </p>
           </div>
           <!-- End Single features -->
@@ -460,13 +455,10 @@
             <div class="signle-icon">
               <i class="icofont-engineer"></i>
             </div>
-            <h3>Production</h3>
+            <h3>الإنتاج</h3>
             <p>
-              <!-- تلتزم شركة [اسم الشركة] بتقديم منتجات طرفية عالية الجودة من خلال انتاج أكثر من 500 منتج باستمرار، مما يساهم في تحسين حياة الكثيرين -->
-              prsteel is committed to providing high-quality prosthetic
-              products through the consistent production of more than 500
-              products per month, which contributes to improving the lives of
-              many.
+              تلتزم شركة [اسم الشركة] بتقديم منتجات طرفية عالية الجودة من خلال انتاج أكثر من 500 منتج باستمرار، مما
+              يساهم في تحسين حياة الكثيرين
             </p>
           </div>
           <!-- End Single features -->
@@ -477,12 +469,10 @@
             <div class="signle-icon">
               <i class="icofont-help-robot"></i>
             </div>
-            <h3>Technology</h3>
+            <h3>التكنلوجيا</h3>
             <p>
-              <!-- تعتمد [اسم الشركة] على أحدث ماكينات CNC لتصنيع وتصميم منتجاتها عالية الجودة، والتي تساعد الأشخاص ذوي الإعاقة على استعادة حريتهم واستقلاليتهم. -->
-              We relies on the latest CNC machines to manufacture and design
-              its high-quality products, which help people with disabilities
-              regain their freedom and independence.
+              تعتمد [اسم الشركة] على أحدث ماكينات CNC لتصنيع وتصميم منتجاتها عالية الجودة، والتي تساعد الأشخاص ذوي
+              الإعاقة على استعادة حريتهم واستقلاليتهم.
             </p>
           </div>
 
@@ -504,13 +494,19 @@
           data-wow-duration="300ms" style="
               visibility: visible;
               animation-duration: 300ms;
-              animation-name: fadeInUp;
-            ">
+              animation-name: fadeInUp">
+
           <i class="icofont icofont-bolt"></i>
           <span id="anim-number-pizza" class="counter-number"></span>
-          <span class="timer counter alt-font appear" data-to="980" data-speed="7000">500</span>
-          <p class="counter-title">product categories</p>
-          <p class="counter-title">and more</p>
+          <span class="timer counter alt-font appear" data-to="980" data-speed="7000">
+            500
+          </span>
+          <p class="counter-title">
+            صنف من المنتجات
+          </p>
+          <p class="counter-title">
+            و أكثر
+          </p>
         </div>
         <!-- end counter -->
         <!-- counter -->
@@ -519,11 +515,12 @@
           data-wow-duration="600ms" style="
               visibility: visible;
               animation-duration: 600ms;
-              animation-name: fadeInUp;
-            ">
+              animation-name: fadeInUp">
           <i class="icofont icofont-architecture"></i>
-          <span class="timer counter alt-font appear" data-to="980" data-speed="7000">3000</span>
-          <span class="counter-title">PROJECTS COMPLETED</span>
+          <span class="timer counter alt-font appear" data-to="980" data-speed="7000">
+            3000
+          </span>
+          <span class="counter-title">مشروع مكتمل</span>
         </div>
         <!-- end counter -->
         <!-- counter -->
@@ -532,11 +529,13 @@
           data-wow-duration="900ms" style="
               visibility: visible;
               animation-duration: 900ms;
-              animation-name: fadeInUp;
-            ">
+              animation-name: fadeInUp">
+
           <i class="icofont-simple-smile"></i>
-          <span class="timer counter alt-font appear" data-to="810" data-speed="7000">1500</span>
-          <span class="counter-title">Happy CLIENTS</span>
+          <span class="timer counter alt-font appear" data-to="810" data-speed="7000">
+            1500
+          </span>
+          <span class="counter-title">من العملاء السعداء</span>
         </div>
         <!-- end counter -->
         <!-- counter -->
@@ -548,13 +547,13 @@
             ">
           <i class="icofont icofont-table"></i>
           <span class="timer counter alt-font appear" data-to="600" data-speed="7000">15</span>
-          <span class="counter-title">Years of Experience</span>
+          <span class="counter-title">سنوات الخبرة</span>
         </div>
         <!-- end counter -->
       </div>
     </div>
   </section>
-  <!--/ End Fun-facts -->
+  <!--/ End counter Fun-facts -->
 
   <!-- CNC technology  -->
   <section class="cnc-tech why-choose section">
@@ -563,18 +562,17 @@
         <div class="col-lg-12">
           <div class="section-title">
             <h5>
-              In the era of advanced digital technology,(CNC) machining has
-              become a leader in enhancing the lives of individuals with
-              artificial limbs. Employing this advanced technology represents
-              a revolutionary advancement in the design and manufacturing of
-              prosthetics.
+              أصبح تصنيع المعدات باستخدام التحكم الرقمي بالكمبيوتر (CNC) رائدًا في تحسين حياة الأشخاص ذوي الأطراف
+              الاصطناعية.
             </h5>
+            <p>
+              يمثل استخدام هذه التكنولوجيا المتقدمة تقدمًا ثوريًا في تصميم وتصنيع الأطراف الاصطناعية، مما يبشر بعصر جديد
+              من الابتكار و التقدم في مجال الأطراف الاصطناعية .
+            </p>
             <br>
             <br>
             <img src="img/section-img.png" alt="#" />
-            <p>
 
-            </p>
           </div>
         </div>
       </div>
@@ -582,42 +580,41 @@
         <div class="col-lg-6 col-12">
           <!-- Start Choose Left -->
           <div class="choose-left">
-            <h3>Unparalleled Precision:</h3>
+            <h3>دقة التصنيع و جو دة الانتاج :</h3>
             <p>
-              CNC machines allow for unparalleled precision in shaping and
-              sculpting processes, resulting in artificial limbs with
-              intricate details and a texture that makes the user feel as if
-              it's a natural part of their body.
+              تمثل إحدى الفوائد الرئيسية لتصنيع CNC في أنه يمكن استخدامه لإنشاء أطراف صناعية من مجموعة متنوعة من المواد،
+              بما في ذلك التيتانيوم وألياف الكربون. تتميز هذه المواد بالقوة والخفة والمتانة، مما يجعلها مثالية للأطراف
+              الاصطناعية.
+
             </p>
 
             <p>
-              Class aptent taciti sociosqu ad litora torquent per conubia
-              nostra, per inceptos himenaeos.
+              بالإضافة إلى ذلك، يمكن استخدام تصنيع CNC لإنشاء أطراف صناعية بأشكال وتصميمات مخصصة. يمكن للمبتورين العمل
+              مع أخصائي الأطراف الاصطناعية لإنشاء طرف صناعي يلبي احتياجاتهم الفردية وأهدافهم.
+
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul class="list">
                   <li>
-                    <i class="fa fa-caret-right"></i>Unparalleled Precision.
+                    <i class="fa fa-caret-right"></i>دقة التفاصيل.
                   </li>
                   <li>
-                    <i class="fa fa-caret-right"></i>Technology for a Better
-                    Life.
+                    <i class="fa fa-caret-right"></i>استخدام التكنلوجيا المتقدمة من أجل حياة أفضل.
                   </li>
                   <li>
-                    <i class="fa fa-caret-right"></i>Seamless Integration.
+                    <i class="fa fa-caret-right"></i>تكامل التصميم و الأداء.
                   </li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul class="list">
                   <li>
-                    <i class="fa fa-caret-right"></i>Lightweight and Durable.
+                    <i class="fa fa-caret-right"></i>خفة الوزن و المتانة .
                   </li>
-                  <li><i class="fa fa-caret-right"></i>Customized Design.</li>
+                  <li><i class="fa fa-caret-right"></i>سهولة الاستخدام.</li>
                   <li>
-                    <i class="fa fa-caret-right"></i>Modern Technology for a
-                    Better Life.
+                    <i class="fa fa-caret-right"></i>تصاميم جذابة.
                   </li>
                 </ul>
               </div>
@@ -647,9 +644,10 @@
       </div>
     </div>
   </section>
+
   <!--/ End CNC technology  -->
 
-  <!-- Start Call to action -->
+  <!-- empty section------------------------------------ -->
   <section class="call-action overlay" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="row">
@@ -672,7 +670,7 @@
       </div>
     </div>
   </section>
-  <!--/ End Call to action -->
+  <!--end empty section------------------------------ -->
 
   <!-- (Start portfolio) Product Range -->
   <section class="portfolio section">
@@ -680,14 +678,17 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="section-title">
-            <h2>Our Product Range</h2>
-            <img src="img/section-img.png" alt="#" />
+            <h2> عينة من منتجاتنا </h2>
             <p>
-              Explore our diverse and innovative product range, where we offer
-              a comprehensive and high-quality solution for various needs in
-              the world of prosthetic components.
+              اكتشف مجموعة منتجاتنا المتنوعة والمبتكرة، حيث نقدم حلاً شاملاً وعالي الجودة لمختلف الاحتياجات في عالم
+              المكونات التعويضية.
             </p>
+
+            <img src="img/section-img.png" alt="#" />
+            <br>
+            <br>
           </div>
+
         </div>
       </div>
     </div>
@@ -740,15 +741,17 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="section-title">
-            <h2>Customization based on Sensing and Control Technology:</h2>
-            <img src="img/section-img.png" alt="#" />
+            <h2>
+              لماذا نحن
+            </h2>
+
             <p>
-              Harnessing advancements in sensing and control technologies
-              allows companies to provide intelligent solutions. For example,
-              incorporating sensor systems enables precise interaction with
-              body movements, providing users with a more natural and
-              effective experience in using the prosthetic limb.
+              تقدم منتجات الأطراف الاصطناعية الخاصة بنا مجموعة واسعة من المزايا التي يمكن أن تساعد الأشخاص ذوي الأطراف
+              المفقودة على استعادة استقلاليتهم ونشاطهم.
+
+              فيما يلي أهم مزايا منتجاتنا :
             </p>
+            <img src="img/section-img.png" alt="#" />
           </div>
         </div>
       </div>
@@ -758,12 +761,13 @@
           <div class="single-service">
             <i class="icofont-ui-check"></i>
             <h4>
-              <a href="service-details.html">Advanced CNC Technology: </a>
+              <a href="service-details.html">
+                تقنية CNC المتقدمة:
+              </a>
             </h4>
             <p>
-              Advanced CNC technology in artificial limb manufacturing
-              enhances precision and quality in design and shaping,
-              contributing to superior performance and a natural appearance.
+              رفع تقنية CNC المتقدمة في تصنيع الأطراف الاصطناعية الدقة والجودة في التصميم والتشكيل، مما يساهم في أداء
+              فائق ومظهر طبيعي.
             </p>
           </div>
           <!-- End Single Service -->
@@ -773,12 +777,13 @@
           <div class="single-service">
             <i class="icofont-ui-check"></i>
             <h4>
-              <a href="service-details.html">Customized and Personalized Design:</a>
+              <a href="service-details.html">
+                تصميم مخصص وشخصي:
+              </a>
             </h4>
             <p>
-              The ability to design artificial limbs according to users' needs
-              and preferences enhances comfort and user experience, making it
-              a unique and suitable choice for each individual.
+              تزيد إمكانية تصميم الأطراف الاصطناعية وفقًا لاحتياجات وتفضيلات المستخدمين من الراحة وتجربة الاستخدام، مما
+              يجعلها خيارًا فريدًا ومناسبًا لكل فرد.
             </p>
           </div>
           <!-- End Single Service -->
@@ -788,12 +793,13 @@
           <div class="single-service">
             <i class="icofont-ui-check"></i>
             <h4>
-              <a href="service-details.html">Lightweight and High Durability:</a>
+              <a href="service-details.html">
+                خفيفة الوزن ومتينة للغاية:
+              </a>
             </h4>
             <p>
-              Marketing artificial limbs characterized by both lightweight and
-              high durability makes them appealing to individuals seeking a
-              comfortable and efficient solution.
+              تسويق الأطراف الاصطناعية التي تتميز بخفة الوزن والمتانة العالية يجعلها جذابة للأفراد الذين يبحثون عن حل
+              مريح وفعال.
             </p>
           </div>
           <!-- End Single Service -->
@@ -803,13 +809,13 @@
           <div class="single-service">
             <i class="icofont-ui-check"></i>
             <h4>
-              <a href="service-details.html">Advanced and Sustainable Materials:</a>
+              <a href="service-details.html">
+                مواد متقدمة ومستدامة:
+              </a>
             </h4>
             <p>
-              Emphasizing the use of advanced and sustainable materials in
-              artificial limb manufacturing reflects the company's commitment
-              to innovation and sustainability, enhancing its image in the
-              market.
+              التأكيد على استخدام مواد متقدمة ومستدامة في تصنيع الأطراف الاصطناعية يعكس التزام بالابتكار والاستدامة،
+              ويعزز صورة الشركة في السوق.
             </p>
           </div>
           <!-- End Single Service -->
@@ -819,13 +825,13 @@
           <div class="single-service">
             <i class="icofont-ui-check"></i>
             <h4>
-              <a href="service-details.html">After-Sales Services and Technical Support:</a>
+              <a href="service-details.html">
+                خدمات ما بعد البيع والدعم التقني:
+              </a>
             </h4>
             <p>
-              Providing after-sales services such as maintenance and technical
-              support contributes to building strong customer relationships,
-              instilling confidence in the continuity and quality offered by
-              the company.
+              تقدم خدمات ما بعد البيع مثل الصيانة والدعم التقني لبناء علاقات قوية مع العملاء، وبث الثقة في استمرارية
+              الجودة التي تقدمها الشركة.
             </p>
           </div>
           <!-- End Single Service -->
@@ -835,16 +841,14 @@
           <div class="single-service">
             <i class="icofont-ui-check"></i>
             <h4>
-              <a href="service-details.html">Communication and Interaction Technology:</a>
+              <a href="service-details.html">
+                الاتصال والتفاعل:
+              </a>
             </h4>
             <p>
-              Utilizing modern communication technology, such as smart
-              applications and online connectivity, allows companies in the
-              artificial limb industry to enhance continuous communication
-              with users. This enables the delivery of updates, tips, and
-              remote support, enhancing the customer experience and building a
-              technological link that supports the relationship between the
-              company and the customer.
+              باستخدام تقنية الاتصال الحديثة، مثل التطبيقات الذكية والاتصال عبر الإنترنت، تتيح الشركات في مجال الأطراف
+              الاصطناعية تحسين التواصل المستمر مع المستخدمين. وهذا يسمح بتقديم التحديثات والنصائح والدعم عن بُعد، مما
+              يعزز تجربة العملاء ويبني رابطًا تكنولوجيًا يدعم العلاقة بين الشركة والعميل.
             </p>
           </div>
 
@@ -855,17 +859,38 @@
   </section>
   <!--/ End service -->
 
-  <!-- empty section------------------------------------ -->
+  <!-- Pricing Table -->
+
+  <!--/ End Pricing Table -->
+
+  <!-- Start Blog Area -->
+
+  <!-- End Blog Area -->
+
+  <!-- Start clients -->
   <section class="call-action overlay" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-12">
-          <div class="content"></div>
+          <div class="content">
+            <h2>
+
+            </h2>
+            <p>
+
+            </p>
+            <!-- <div class="button">
+                <a href="#" class="btn">Contact Now</a>
+                <a href="#" class="btn second"
+                  >Learn More<i class="fa fa-long-arrow-right"></i
+                ></a>
+              </div> -->
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!--end empty section------------------------------ -->
+  <!--/Ens clients -->
 
   <!-- contact-us section -->
   <section class="contact-us section">
@@ -873,10 +898,11 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="section-title">
-            <h2>Stay in touch </h2>
+            <h2>ابقى على اتصال </h2>
             <img src="img/section-img.png" alt="#" />
             <p>
-              for more information You can also follow us on our social media channels or contact us via email
+              لمزيد من المعلومات، يمكنك أيضًا متابعتنا على قنوات التواصل الاجتماعي الخاصة بنا أو الاتصال بنا عبر البريد
+              الإلكتروني
             </p>
           </div>
         </div>
@@ -890,45 +916,46 @@
           </div>
           <div class="col-lg-6">
             <div class="contact-us-form">
-              <h2>Contact With Us</h2>
+              <h2>اتصل بنا</h2>
               <p>
-                If you have any questions please fell free to contact with us.
+                إذا كان لديك أي أسئلة فلا تتردد في الاتصال بنا.
               </p>
               <!-- Form -->
               <form class="form" method="post" action="mail/mail.php">
                 <div class="row">
                   <div class="col-lg-6">
                     <div class="form-group">
-                      <input type="text" name="name" placeholder="Name" required="" />
+                      <input type="text" name="name" placeholder="الاسم" required="" />
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="form-group">
-                      <input type="email" name="email" placeholder="Email" required="" />
+                      <input type="email" name="email" placeholder="البريد الالكتروني" required="" />
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="form-group">
-                      <input type="text" name="phone" placeholder="Phone" required="" />
+                      <input type="text" name="phone" placeholder="الهاتف" required="" />
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="form-group">
-                      <input type="text" name="subject" placeholder="Subject" required="" />
+                      <input type="text" name="subject" placeholder="الموضوع" required="" />
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="form-group">
-                      <textarea name="message" placeholder="Your Message" required=""></textarea>
+                      <textarea name="message" placeholder="رسالتك" required=""></textarea>
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-group login-btn">
-                      <button class="btn" type="submit">Send</button>
+                      <button class="btn" type="submit">ارسال</button>
                     </div>
                     <div class="checkbox">
-                      <label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox" />Do you
-                        want to subscribe our Newsletter ?</label>
+                      <label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox" />هل تريد
+                        الاشتراك في النشرة الإخبارية لدينا؟
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -939,7 +966,7 @@
         </div>
       </div>
   </section>
-  <!-- End contact-us section-->
+  <!-- End Appointment -->
 
   <!-- Start Newsletter Area -->
   <section class="newsletter section">
@@ -948,10 +975,10 @@
         <div class="col-lg-6 col-12">
           <!-- Start Newsletter Form -->
           <div class="subscribe-text">
-            <h6>Sign up for newsletter</h6>
+            <h6>الاشتراك في النشرة الإخبارية
+            </h6>
             <p class="">
-              Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu,<br />
-              homero alterum.
+
             </p>
           </div>
           <!-- End Newsletter Form -->
@@ -960,9 +987,9 @@
           <!-- Start Newsletter Form -->
           <div class="subscribe-form">
             <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-              <input name="EMAIL" placeholder="Your email address" class="common-input" onfocus="this.placeholder = ''"
+              <input name="EMAIL" placeholder="بريدك الالكتروني" class="common-input" onfocus="this.placeholder = ''"
                 onblur="this.placeholder = 'Your email address'" required="" type="email" />
-              <button class="btn">Subscribe</button>
+              <button class="btn">إشترك </button>
             </form>
           </div>
           <!-- End Newsletter Form -->
@@ -980,10 +1007,12 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-12">
             <div class="single-footer">
-              <h2>About Us</h2>
+              <h2>من نحن</h2>
               <p>
-                Lorem ipsum dolor sit am consectetur adipisicing elit do
-                eiusmod tempor incididunt ut labore dolore magna.
+                شركة بريستيل لتصنيع مكونات الأطراف الاصطناعية والمساند التقويمية.
+                <br>
+                تنتج بريستيل مجموعة واسعة من مكونات الأطراف الاصطناعية من التيتانيوم والفولاذ المقاوم للصدأ .
+                <br>
               </p>
               <!-- Social -->
               <ul class="social">
@@ -1008,73 +1037,55 @@
           </div>
           <div class="col-lg-3 col-md-6 col-12">
             <div class="single-footer f-link">
-              <h2>Quick Links</h2>
+              <h2>روابط سريعة </h2>
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
                   <ul>
                     <li>
-                      <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
+                      <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i>الرئيسية</a>
                     </li>
                     <li>
-                      <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a>
+                      <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i>من نجن</a>
                     </li>
                     <li>
-                      <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a>
+                      <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i>منتجاتنا</a>
                     </li>
                     <li>
-                      <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Cases</a>
+                      <a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i>اتصل بنا</a>
                     </li>
-                    <li>
-                      <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a>
-                    </li>
+
                   </ul>
                 </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Consuling</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a>
-                    </li>
-                  </ul>
-                </div>
+
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
             <div class="single-footer">
-              <h2>Open Hours</h2>
+              <h2> ساعات العمل </h2>
               <p>
-                Lorem ipsum dolor sit ame consectetur adipisicing elit do
-                eiusmod tempor incididunt.
+
               </p>
               <ul class="time-sidual">
-                <li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
-                <li class="day">Saturday <span>9.00-18.30</span></li>
-                <li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+                <li class="day">الاثنين - الجمعة <span>8.00-20.00</span></li>
+                <li class="day"> الاحد <span>9.00-18.30</span></li>
+                <li class="day"> السبت <span>9.00-15.00</span></li>
               </ul>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
             <div class="single-footer">
-              <h2>Newsletter</h2>
+              <h2>النشرة الإخبارية
+              </h2>
               <p>
-                subscribe to our newsletter to get allour news in your inbox..
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                اشترك في النشرة الإخبارية لدينا للحصول على جميع أخبارنا في صندوق الوارد الخاص بك..
+
+
               </p>
               <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-                <input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Your email address'" required="" type="email" />
+                <input name="email" placeholder="عنوان البريد الالكتروني" class="common-input"
+                  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'" required=""
+                  type="email" />
                 <button class="button">
                   <i class="icofont icofont-paper-plane"></i>
                 </button>
@@ -1092,7 +1103,7 @@
           <div class="col-lg-12 col-md-12 col-12">
             <div class="copyright-content">
               <p>
-                © Copyright 2018 | All Rights Reserved by
+                © Copyright 2024 | All Rights Reserved by
                 <a href="https://www..com" target="_blank">Mohamad Alasaad</a>
               </p>
             </div>
@@ -1103,8 +1114,12 @@
     <!--/ End Copyright -->
   </footer>
   <!--/ End Footer Area -->
-
   <!-- language picker -->
+
+
+  <!-- Your page content goes here -->
+
+  <!-- Add links based on the selected language -->
 
   <!-- end language picker -->
   <!-- jquery Min JS -->
@@ -1146,7 +1161,7 @@
   <!-- Bootstrap JS -->
   <script src="js/bootstrap.min.js"></script>
   <!-- Main JS -->
-  <script src="js/main.js"></script>
+  <script src="js/main-rtl.js"></script>
 </body>
 
 </html>

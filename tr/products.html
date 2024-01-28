@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ar" dir="rtl">
+<html lang="en">
 
 <head>
   <!-- Meta Tags -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="keywords" content="Site keywords here" />
   <meta name="description" content="" />
@@ -45,23 +44,19 @@
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
   <link rel="stylesheet" href="../css/products.css" />
-  <link rel="stylesheet" href="../ar.css" />
 
-  <!-- language picker -->
   <script>
     function changeLanguage() {
       var language = document.getElementById("language").value;
-      if (language == "arabic") {
-        window.location.href = "../ar.html";
+      if (language == "english") {
+        window.location.href = "../index.html";
       } else if (language == "turkish") {
         window.location.href = "../tr.html";
-      } else if (language == "english") {
-        window.location.href = "../index.html";
+      } else if (language == "arabic") {
+        window.location.href = "../ar.html";
       }
     }
   </script>
-  <!-- end language picker -->
-
 </head>
 
 <body>
@@ -84,7 +79,7 @@
   <!-- Header Area -->
   <header class="header">
     <!-- Topbar -->
-    <div class="topbar" dir="ltr">
+    <div class="topbar">
       <div class="container-fluid">
         <div class="row">
 
@@ -106,9 +101,9 @@
           <div class="col-lg-3 col-md-3 col-12">
             <div class="language-picker">
               <select id="language" onchange="changeLanguage()">
-                <option value="english">English</option>
+                <option value="english selected">English</option>
                 <option value="turkish">Türkçe</option>
-                <option value="arabic" selected>العربية</option>
+                <option value="arabic">العربية</option>
               </select>
             </div>
           </div>
@@ -118,14 +113,14 @@
     </div>
     <!-- End Topbar -->
     <!-- Header Inner -->
-    <div class="header-inner" dir="ltr">
+    <div class="header-inner">
       <div class="container">
         <div class="inner">
           <div class="row">
             <div class="col-lg-3 col-md-3 col-12">
               <!-- Start Logo -->
               <div class="logo">
-                <a href="../ar.html"><img src="../img/PrsteelLogo.png" alt="PrsteelLogo" /></a>
+                <a href="../tr.html"><img src="../img/PrsteelLogo.png" alt="PrsteelLogo" /></a>
               </div>
               <!-- End Logo -->
               <!-- Mobile Nav -->
@@ -137,16 +132,10 @@
               <div class="main-menu">
                 <nav class="navigation">
                   <ul class="nav menu">
-                    <li>
-                      <a href="#">الصفحات</a>
-                      <ul class="dropdown">
-                        <li><a href="../404.html">404 Error</a></li>
-                        <li><a href="details.html">details</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="contact.html">الاتصال</a></li>
+                    <li><a href="../tr.html">ANASAYFA </a></li>
+                    <li><a href="about.html">HAKKIMIZDA </a></li>
                     <li class="active">
-                      <a href="products.html">المنتجات <i class="icofont-rounded-down"></i></a>
+                      <a href="products.html">ÜRÜNLER <i class="icofont-rounded-down"></i></a>
                       <ul class="dropdown">
                         <li><a href="products.html#product1">CARBON FOOT</a></li>
                         <li><a href="products.html">PROSTHETIC FEET</a></li>
@@ -158,9 +147,13 @@
                         <li><a href="products.html">ORTHOTIC COMPONENTS</a></li>
                       </ul>
                     </li>
-                    <li><a href="about.html">من نحن </a></li>
-
-                    <li><a href="../ar.html">الرئيسية </a></li>
+                    <li><a href="contact.html">İLETİŞİM</a></li>
+                    <li>
+                      <a href="#">SAYFA <i class="icofont-rounded-down"></i></a>
+                      <ul class="dropdown">
+                        <li><a href="404.html">404 Error</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -175,16 +168,16 @@
   <!-- End Header Area -->
 
   <!-- Breadcrumbs -->
-  <div class="breadcrumbs overlay">
+  <div class="breadcrumbs ">
     <div class="container">
       <div class="bread-inner">
         <div class="row">
           <div class="col-12">
             <h2>Products</h2>
             <ul class="bread-list">
-              <li><a href="../ar.html">الرئيسية</a></li>
-              <li><i class="icofont-simple-left"></i></li>
-              <li class="active">المنتجات</li>
+              <li><a href="../tr.html">ANASAYFA</a></li>
+              <li><i class="icofont-simple-right"></i></li>
+              <li class="active">ÜRÜNLER</li>
             </ul>
           </div>
         </div>
@@ -194,9 +187,11 @@
   <!-- End Breadcrumbs -->
 
   <!-- products -->
-  <!-- side menu ------------------------------- -->
+
   <div class="container-fluid mt-3 side-menu-container">
     <div class="row">
+
+      <!-- side menu col ------------------------------- -->
       <div class="col-md-3">
         <div class="li-group">
           <div class="menu-list">
@@ -234,201 +229,32 @@
           </div>
         </div>
       </div>
+
+      <!-- contents side col  ------------------------------- -->
       <div class="col-md-9">
         <div class="content">
           <!-- content 1 ------------------------------------------>
           <div id="content1" class="content-item active">
             <h2>pedilenayak - Responsive Grid Cards</h2>
-            <div class="row">
+            <div class="row ">
               <!-- list products card ---------->
+
               <div class="col-md-3 mb-4">
                 <div class="card product-card">
-                  <img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg" alt="Product Image" />
-                  <div class="product-info">
-                    <h4 style="font-weight: bold; color: #000">
-                      product code
-                    </h4>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">
-                      <span style="font-weight: bold; color: #000">TOPUK</span>
-                      YÜKSEKLİĞİ 10 mm
-                    </p>
-                    <p class="card-text">
-                      <span style="font-weight: bold; color: #000">MAKSİMUM AĞIRLIK</span>
-                      100 kg
-                    </p>
-                    <p class="card-text">
-                      <span style="font-weight: bold; color: #000">TARAF</span>
-                      SOL-SAĞ
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Ort-08H10/Dinamik Ayak</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting .
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 mb-4">
-                <div class="card product-card">
-                  <img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg" alt="Product Image" />
-                  <div class="product-info">
-                    <h4 style="font-weight: bold; color: #000">
-                      product code
-                    </h4>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">
-                      <span style="font-weight: bold; color: #000">TOPUK</span>
-                      YÜKSEKLİĞİ 10 mm
-                    </p>
-                    <p class="card-text">
-                      <span style="font-weight: bold; color: #000">MAKSİMUM AĞIRLIK</span>
-                      100 kg
-                    </p>
-                    <p class="card-text">
-                      <span style="font-weight: bold; color: #000">TARAF</span>
-                      SOL-SAĞ
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Ort-08H10/Dinamik Ayak</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting .
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 mb-4">
-                <div class="card product-card">
-                  <img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg" alt="Product Image" />
-                  <div class="product-info">
-                    <h4 style="font-weight: bold; color: #000">
-                      product code
-                    </h4>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">
-                      <span style="font-weight: bold; color: #000">TOPUK</span>
-                      YÜKSEKLİĞİ 10 mm
-                    </p>
-                    <p class="card-text">
-                      <span style="font-weight: bold; color: #000">MAKSİMUM AĞIRLIK</span>
-                      100 kg
-                    </p>
-                    <p class="card-text">
-                      <span style="font-weight: bold; color: #000">TARAF</span>
-                      SOL-SAĞ
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Ort-08H10/Dinamik Ayak</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting .
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 mb-4">
-                <div class="card product-card">
-                  <img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg" alt="Product Image" />
-                  <div class="product-info">
-                    <h4 style="font-weight: bold; color: #000">
-                      product code
-                    </h4>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">ORT-08H10=22L-R</p>
-                    <p class="card-text">
-                      <span style="font-weight: bold; color: #000">TOPUK</span>
-                      YÜKSEKLİĞİ 10 mm
-                    </p>
-                    <p class="card-text">
-                      <span style="font-weight: bold; color: #000">MAKSİMUM AĞIRLIK</span>
-                      100 kg
-                    </p>
-                    <p class="card-text">
-                      <span style="font-weight: bold; color: #000">TARAF</span>
-                      SOL-SAĞ
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Ort-08H10/Dinamik Ayak</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting .
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 mb-4">
-                <div class="card product-card">
-                  <a href="product.details.html"><img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg"
-                      alt="Product Image" /></a>
+                  <a class="gallery" href="../imgs/dinamik-ayak.jpg"><img class="card-img-top product-img"
+                      src="../imgs/dinamik-ayak.jpg" alt="Product Image" /></a>
 
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">
+                      <a href="details.html">details</a>
+                    </h5>
                     <p class="card-text">
                       This is a wider card with supporting .
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 mb-4">
-                <div class="card product-card">
-                  <a href="product.details.html"><img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg"
-                      alt="Product Image" /></a>
 
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting .
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 mb-4">
-                <div class="card product-card">
-                  <a href="product.details.html"><img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg"
-                      alt="Product Image" /></a>
-
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting .
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 mb-4">
-                <div class="card product-card">
-                  <a href="product.details.html"><img class="card-img-top product-img" src="../imgs/dinamik-ayak.jpg"
-                      alt="Product Image" /></a>
-
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting .
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <!-- content 2 ------------------------------------------>
@@ -561,7 +387,7 @@
                 subscribe to our newsletter to get allour news in your inbox..
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
               </p>
-              <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+              <form action="../mail/mail.php" method="get" target="_blank" class="newsletter-inner">
                 <input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Your email address'" required="" type="email" />
                 <button class="button">
@@ -592,9 +418,6 @@
     <!--/ End Copyright -->
   </footer>
   <!--/ End Footer Area -->
-
-  <!-- side menu script -->
-
 
   <!-- side menu script -->
 
@@ -650,12 +473,31 @@
   <script src="../js/wow.min.js"></script>
   <!-- Magnific Popup JS -->
   <script src="../js/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $('.gallery').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        mainClass: 'mfp-img-mobile',
+        image: {
+          verticalFit: true
+        }
+
+      });
+
+
+
+
+
+    });
+  </script>
   <!-- Counter Up CDN JS -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
   <!-- Bootstrap JS -->
   <script src="../js/bootstrap.min.js"></script>
   <!-- Main JS -->
-  <script src="../js/main-rtl.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

@@ -40,12 +40,16 @@
 .slider .single-slider {
     
     background-position: left;
+    
 }}
 @media only screen and (max-width: 450px){
     .slider .single-slider {
         
         background-position: left;
-    }}
+        
+        
+    }
+}
 
 
 /*=============================
@@ -102,5 +106,21 @@
 .contact-us .contact-us-form p{
     text-align: right;
 }
+/*=========================
+	footer
+===========================*/
 
-
+.footer .single-footer h2::before {
+    
+    right: 0;
+    
+}
+.footer .single-footer.f-link li a i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.footer .single-footer .social li {
+    display: inline-block;
+    margin-right: 0;
+    margin-left: 10px;
+}

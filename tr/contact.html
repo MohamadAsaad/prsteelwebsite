@@ -21,29 +21,29 @@
     href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
     rel="stylesheet" />
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
   <!-- Nice Select CSS -->
-  <link rel="stylesheet" href="css/nice-select.css" />
+  <link rel="stylesheet" href="../css/nice-select.css" />
   <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/font-awesome.min.css" />
   <!-- icofont CSS -->
-  <link rel="stylesheet" href="css/icofont.css" />
+  <link rel="stylesheet" href="../css/icofont.css" />
   <!-- Slicknav -->
-  <link rel="stylesheet" href="css/slicknav.min.css" />
+  <link rel="stylesheet" href="../css/slicknav.min.css" />
   <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="css/owl-carousel.css" />
+  <link rel="stylesheet" href="../css/owl-carousel.css" />
   <!-- Datepicker CSS -->
-  <link rel="stylesheet" href="css/datepicker.css" />
+  <link rel="stylesheet" href="../css/datepicker.css" />
   <!-- Animate CSS -->
-  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="../css/animate.min.css" />
   <!-- Magnific Popup CSS -->
-  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="../css/magnific-popup.css" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <link rel="stylesheet" href="css/products.css" />
+  <!--  CSS -->
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="../css/products.css" />
 
   <script>
     function changeLanguage() {
@@ -51,9 +51,9 @@
       if (language == "english") {
         window.location.href = "index.html";
       } else if (language == "turkish") {
-        window.location.href = "tr.html";
+        window.location.href = "../tr.html";
       } else if (language == "arabic") {
-        window.location.href = "ar.html";
+        window.location.href = "../ar.html";
       }
     }
   </script>
@@ -75,6 +75,8 @@
     </div>
   </div>
   <!-- End Preloader -->
+
+  <!-- Get Pro Button -->
 
   <!-- Header Area -->
   <header class="header">
@@ -101,8 +103,8 @@
           <div class="col-lg-3 col-md-3 col-12">
             <div class="language-picker">
               <select id="language" onchange="changeLanguage()">
-                <option value="english selected">English</option>
-                <option value="turkish">Türkçe</option>
+                <option value="english ">English</option>
+                <option value="turkish" selected>Türkçe</option>
                 <option value="arabic">العربية</option>
               </select>
             </div>
@@ -120,7 +122,7 @@
             <div class="col-lg-3 col-md-3 col-12">
               <!-- Start Logo -->
               <div class="logo">
-                <a href="index.html"><img src="img/PrsteelLogo.png" alt="PrsteelLogo" /></a>
+                <a href="../tr.html"><img src="../img/PrsteelLogo.png" alt="PrsteelLogo" /></a>
               </div>
               <!-- End Logo -->
               <!-- Mobile Nav -->
@@ -132,10 +134,10 @@
               <div class="main-menu">
                 <nav class="navigation">
                   <ul class="nav menu">
-                    <li><a href="index.html">HOME </a></li>
-                    <li><a href="about.html">ABOUT US </a></li>
-                    <li class="active">
-                      <a href="products.html">PRODUCTS <i class="icofont-rounded-down"></i></a>
+                    <li><a href="../tr.html">ANASAYFA </a></li>
+                    <li><a href="about.html">HAKKIMIZDA </a></li>
+                    <li>
+                      <a href="products.html">ÜRÜNLER <i class="icofont-rounded-down"></i></a>
                       <ul class="dropdown">
                         <li><a href="products.html#product1">CARBON FOOT</a></li>
                         <li><a href="products.html">PROSTHETIC FEET</a></li>
@@ -147,12 +149,11 @@
                         <li><a href="products.html">ORTHOTIC COMPONENTS</a></li>
                       </ul>
                     </li>
-                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li class="active"><a href="contact.html">İLETİŞİM</a></li>
                     <li>
-                      <a href="#">PAGES <i class="icofont-rounded-down"></i></a>
+                      <a href="#">SAYFA <i class="icofont-rounded-down"></i></a>
                       <ul class="dropdown">
                         <li><a href="404.html">404 Error</a></li>
-                        <li><a href="details.html">details</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -174,11 +175,11 @@
       <div class="bread-inner">
         <div class="row">
           <div class="col-12">
-            <h2>Products</h2>
+            <h2>Bize Ulaşın</h2>
             <ul class="bread-list">
-              <li><a href="index.html">Home</a></li>
+              <li><a href="../tr.html">ANASAYFA</a></li>
               <li><i class="icofont-simple-right"></i></li>
-              <li class="active">products</li>
+              <li class="active">Bize Ulaşın</li>
             </ul>
           </div>
         </div>
@@ -187,105 +188,106 @@
   </div>
   <!-- End Breadcrumbs -->
 
-  <!-- products -->
+  <!-- Start Contact Us -->
+  <section class="contact-us section">
+    <div class="container">
+      <div class="inner">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact-us-left">
+              <!--Start Google-map -->
+              <div id="myMap"></div>
+              <!--/End Google-map -->
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact-us-form">
+              <h2>Bizimle İletişime Geçin</h2>
+              <p>
+                Herhangi bir sorunuz varsa, lütfen bizimle iletişime geçmekten çekinmeyin.
+              </p>
+              <!-- Form -->
+              <form class="form" method="post" action="../mail/mail.php">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="text" name="name" placeholder="Ad" required="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="email" name="email" placeholder="E-Posta" required="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="text" name="phone" placeholder="Telefon" required="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="text" name="subject" placeholder="konu" required="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea name="message" placeholder="Mesajınız" required=""></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group login-btn">
+                      <button class="btn" type="submit">Gönder</button>
+                    </div>
 
-  <div class="container-fluid mt-3 side-menu-container">
-    <div class="row">
-
-      <!-- side menu col ------------------------------- -->
-      <div class="col-md-3">
-        <div class="li-group">
-          <div class="menu-list">
-            <h1 class="products-logo">
-              <a href="#">our <span>Products</span></a>
-            </h1>
-            <nav class="side-menu main-nav">
-              <ul class="unstyled list-hover-slide">
-                <li class="menu-item" onclick="showContent('content1')">
-                  <a class="li-group-item" id="product1">CARBON FOOT</a>
-                </li>
-                <li class="menu-item" onclick="showContent('content2')">
-                  <a class="li-group-item" id="product2">PROSTHETIC FEET</a>
-                </li>
-                <li class="menu-item" onclick="showContent('content3')">
-                  <a class="li-group-item" id="product3">STRUCTURAL PART</a>
-                </li>
-                <li class="menu-item" onclick="showContent('content3')">
-                  <a class="li-group-item" id="product4">KNEE JOINTS</a>
-                </li>
-                <li class="menu-item" onclick="showContent('content3')">
-                  <a class="li-group-item" id="product5">SOCKET AND LOCKING SYSTEMS</a>
-                </li>
-                <li class="menu-item" onclick="showContent('content3')">
-                  <a class="li-group-item" id="product6">COSTEMIC COVERS</a>
-                </li>
-                <li class="menu-item" onclick="showContent('content3')">
-                  <a class="li-group-item" id="product7">COMPONENTS FOR CHILDREN</a>
-                </li>
-                <li class="menu-item" onclick="showContent('content3')">
-                  <a class="li-group-item" id="product8">ORTHOTIC COMPONENTS</a>
-                </li>
-              </ul>
-            </nav>
+                  </div>
+                </div>
+              </form>
+              <!--/ End Form -->
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- contents side col  ------------------------------- -->
-      <div class="col-md-9">
-        <div class="content">
-          <!-- content 1 ------------------------------------------>
-          <div id="content1" class="content-item active">
-            <h2>pedilenayak - Responsive Grid Cards</h2>
-            <div class="row ">
-              <!-- list products card ---------->
-
-              <div class="col-md-3 mb-4">
-                <div class="card product-card">
-                  <a class="gallery" href="imgs/dinamik-ayak.jpg"><img class="card-img-top product-img"
-                      src="imgs/dinamik-ayak.jpg" alt="Product Image" /></a>
-
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <a href="details.html">details</a>
-                    </h5>
-                    <p class="card-text">
-                      This is a wider card with supporting .
-                    </p>
-                  </div>
-                </div>
+      <div class="contact-info">
+        <div class="row">
+          <!-- single-info -->
+          <div class="col-lg-4 col-12">
+            <div class="single-info">
+              <i class="icofont icofont-ui-call"></i>
+              <div class="content">
+                <h3>+90 536 630 31 12</h3>
+                <p>info@pr-steel.com</p>
               </div>
-
             </div>
           </div>
-          <!-- content 2 ------------------------------------------>
-          <div id="content2" class="content-item">
-            <!-- Content for Item 2 -->
-            <div class="card-container">
-              <div class="card">
-                <h3>Card 4</h3>
-                <p>This is the content of Card 1.</p>
+          <!--/End single-info -->
+          <!-- single-info -->
+          <div class="col-lg-4 col-12">
+            <div class="single-info">
+              <i class="icofont-google-map"></i>
+              <div class="content">
+                <h6>
+                  MEHMET RIFAT KAZANCIOGLU MAH. 104 SK. KÜÇÜK SANAYI NO: 4 F
+                </h6>
+                <p>KILIS, TÜRKIYE</p>
               </div>
-              <div class="card">
-                <h3>Card 5</h3>
-                <p>This is the content of Card 2.</p>
-              </div>
-              <div class="card">
-                <h3>Card 6</h3>
-                <p>This is the content of Card 3.</p>
-              </div>
-              <!-- Add more cards as needed -->
             </div>
           </div>
-          <!-- content 3 ------------------------------------------>
-          <div id="content3" class="content-item">
-            hi item 3
-            <!-- Content for Item 3 -->
+          <!--/End single-info -->
+          <!-- single-info -->
+          <div class="col-lg-4 col-12">
+            <div class="single-info">
+              <i class="icofont icofont-wall-clock"></i>
+              <div class="content">
+                <h3>Mon - Sat: 8am - 5pm</h3>
+                <p>Pazar Kapalı</p>
+              </div>
+            </div>
           </div>
+          <!--/End single-info -->
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!--/ End Contact Us -->
 
   <!-- Footer Area -->
@@ -419,86 +421,54 @@
     <!--/ End Copyright -->
   </footer>
   <!--/ End Footer Area -->
-
-  <!-- side menu script -->
-
-  <script>
-    // -------------------------------
-    function showContent(contentId) {
-      // Hide all content items
-      var contentItems = document.querySelectorAll(".content-item");
-      contentItems.forEach(function (item) {
-        item.classList.remove("active");
-      });
-      // Show the selected content item
-      var selectedContent = document.getElementById(contentId);
-      if (selectedContent) {
-        selectedContent.classList.add("active");
-      }
-    }
-  </script>
   <!-- language script -->
 
-
   <!-- jquery Min JS -->
-  <script src="js/jquery.min.js"></script>
+  <script src="../js/jquery.min.js"></script>
   <!-- jquery Migrate JS -->
-  <script src="js/jquery-migrate-3.0.0.js"></script>
+  <script src="../js/jquery-migrate-3.0.0.js"></script>
   <!-- jquery Ui JS -->
-  <script src="js/jquery-ui.min.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
   <!-- Easing JS -->
-  <script src="js/easing.js"></script>
+  <script src="../js/easing.js"></script>
   <!-- Color JS -->
-  <script src="js/colors.js"></script>
+  <script src="../js/colors.js"></script>
   <!-- Popper JS -->
-  <script src="js/popper.min.js"></script>
+  <script src="../js/popper.min.js"></script>
   <!-- Bootstrap Datepicker JS -->
-  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="../js/bootstrap-datepicker.js"></script>
   <!-- Jquery Nav JS -->
-  <script src="js/jquery.nav.js"></script>
+  <script src="../js/jquery.nav.js"></script>
   <!-- Slicknav JS -->
-  <script src="js/slicknav.min.js"></script>
+  <script src="../js/slicknav.min.js"></script>
   <!-- ScrollUp JS -->
-  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="../js/jquery.scrollUp.min.js"></script>
   <!-- Niceselect JS -->
-  <script src="js/niceselect.js"></script>
+  <script src="../js/niceselect.js"></script>
   <!-- Tilt Jquery JS -->
-  <script src="js/tilt.jquery.min.js"></script>
+  <script src="../js/tilt.jquery.min.js"></script>
   <!-- Owl Carousel JS -->
-  <script src="js/owl-carousel.js"></script>
+  <script src="../js/owl-carousel.js"></script>
   <!-- counterup JS -->
-  <script src="js/jquery.counterup.min.js"></script>
+  <script src="../js/jquery.counterup.min.js"></script>
   <!-- Steller JS -->
-  <script src="js/steller.js"></script>
+  <script src="../js/steller.js"></script>
   <!-- Wow JS -->
-  <script src="js/wow.min.js"></script>
+  <script src="../js/wow.min.js"></script>
   <!-- Magnific Popup JS -->
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script>
-    $(document).ready(function () {
-
-      $('.gallery').magnificPopup({
-        type: 'image',
-        closeOnContentClick: true,
-        mainClass: 'mfp-img-mobile',
-        image: {
-          verticalFit: true
-        }
-
-      });
-
-
-
-
-
-    });
-  </script>
+  <script src="../js/jquery.magnific-popup.min.js"></script>
   <!-- Counter Up CDN JS -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <!-- Google Map API Key JS -->
+  <script src="https://maps.google.com/maps/api/js?key=AIzaSyDGqTyqoPIvYxhn_Sa7ZrK5bENUWhpCo0w"></script>
+  <!-- Gmaps JS -->
+  <script src="../js/gmaps.min.js"></script>
+  <!-- Map Active JS -->
+  <script src="../js/map-active.js"></script>
   <!-- Bootstrap JS -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
   <!-- Main JS -->
-  <script src="js/main.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

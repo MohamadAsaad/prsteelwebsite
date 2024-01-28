@@ -272,8 +272,6 @@
       .content-item.active {
         display: block;
       }
-      .card:hover {
-        transform: scale(1.05);
-      }
+      
    
   

@@ -244,7 +244,7 @@ body{
 }
 .header .top-contact {
     float: inline-start;
-    margin-inline-start: 3%;
+    /* margin-inline-start: 3%; */
 }
 .header .language-picker{
 	float: inline-end;
@@ -252,7 +252,7 @@ body{
 }
 .header .top-contact li{
 	display:inline-block;
-	margin-right:25px;
+	/* margin-right:25px; */
 	color:white;
 }
 .header .top-contact li:last-child{
@@ -276,17 +276,22 @@ body{
 
 
 .nice-select {
-    background-color: #565655;
+    background-color: #aecb06;
 	color: black;
 	height: 30px;
-    padding-left: 10px;
-    padding-right: 23px;
+    /* padding-left: 10px;
+    padding-right: 23px; */
 	margin-bottom: 0;
 	border: solid 1px #000000;
 	z-index: 1000;
 }
+.nice-select:after {
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
 .nice-select .list {
-	background-color: #aecb06;
+	background-color: #565655;
 }
 
 .nice-select .option{
@@ -294,14 +299,17 @@ body{
 	line-height: 30px;
     padding-left: 15px;
     padding-right: 15px;
-	background-color: #aecb06;
+	background-color: #565655;
 }
 .nice-select .option.sellected{
 	color: black;
 }
 .nice-select .option:hover {
-    background-color: #565655;
+    background-color: #242424;
     color: #fff;
+}
+.nice-select:hover {
+    border-color: unset;
 }
 
 /*-----------end  language picker--------------- */
@@ -353,7 +361,7 @@ body{
 .header .nav li a {
 	color: white;
 	font-size: 19px;
-	font-weight: 500;
+	font-weight: lighter;
 	text-transform: capitalize;
 	padding: 25px 12px;
 	position: relative;
@@ -649,6 +657,7 @@ body{
 	color: black;
 	margin-top: 27px;
 	font-weight: 400;
+	max-width: 350px;
 }
 .slider .single-slider .button{
 	margin-top:30px;
